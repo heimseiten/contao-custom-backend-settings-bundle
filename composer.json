@@ -3,7 +3,9 @@
     "description": "Contao-Custom-Backend-Settings",
     "keywords": [
         "Kopie Label",
-        "CSS Feld"
+        "CSS Feld",
+        "News kopieren",
+        "Events kopieren"
     ],
     "type": "contao-bundle",
     "license": "GPL-3.0-or-later",

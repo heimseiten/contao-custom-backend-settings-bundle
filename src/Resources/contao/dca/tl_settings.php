@@ -45,6 +45,20 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['copiedPageOrArticleWithoutLabelCopy
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
+$GLOBALS['TL_DCA']['tl_settings']['fields']['copyNewsWithAllDetails'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_settings']['copyNewsWithAllDetails'],
+    'inputType' => 'checkbox', 
+    'eval'      => array('tl_class' => 'w50 m12'),
+    'sql'       => "char(1) NOT NULL default ''"
+];
+
+$GLOBALS['TL_DCA']['tl_settings']['fields']['copyEventsWithAllDetails'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_settings']['copyEventsWithAllDetails'],
+    'inputType' => 'checkbox', 
+    'eval'      => array('tl_class' => 'w50 m12'),
+    'sql'       => "char(1) NOT NULL default ''"
+];
+
 PaletteManipulator::create()
     ->addLegend('CustomBackendSettings', 'backend_legend', PaletteManipulator::POSITION_AFTER)
     
@@ -54,6 +68,8 @@ PaletteManipulator::create()
     ->addField('highlightSearchedPageTree', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('enlargeCssField', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('copiedPageOrArticleWithoutLabelCopy', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
+    ->addField('copyNewsWithAllDetails', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
+    ->addField('copyEventsWithAllDetails', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     
     ->applyToPalette('default', 'tl_settings') 
 ;
