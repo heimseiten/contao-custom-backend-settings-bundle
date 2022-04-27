@@ -9,3 +9,5 @@ $GLOBALS['TL_LANG']['tl_settings']['highlightFilteredPageTree'] = array('gefilte
 $GLOBALS['TL_LANG']['tl_settings']['highlightSearchedPageTree'] = array('durchsuchten Seitenbaum hervorheben', '');
 
 $GLOBALS['TL_LANG']['tl_settings']['enlargeCssField'] = array('CSS Eingabefeld vergrößern', '');
+
+$GLOBALS['TL_LANG']['tl_settings']['copiedPageOrArticleWithoutLabelCopy'] = array('beim Kopieren von Seiten oder Artikeln nicht "(Kopie)" an den Namen hängen', '');
