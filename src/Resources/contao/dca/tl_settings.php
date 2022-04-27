@@ -17,11 +17,35 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['publishArticleOnCreate'] = [
     'sql'       => "char(1) NOT NULL default ''" 
 ];
 
+$GLOBALS['TL_DCA']['tl_settings']['fields']['highlightFilteredPageTree'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_settings']['highlightFilteredPageTree'],
+    'inputType' => 'checkbox', 
+    'eval'      => array('tl_class' => 'w50 m12'),
+    'sql'       => "char(1) NOT NULL default ''"
+];
+
+$GLOBALS['TL_DCA']['tl_settings']['fields']['highlightSearchedPageTree'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_settings']['highlightSearchedPageTree'],
+    'inputType' => 'checkbox', 
+    'eval'      => array('tl_class' => 'w50 m12'),
+    'sql'       => "char(1) NOT NULL default ''"
+];
+
+$GLOBALS['TL_DCA']['tl_settings']['fields']['enlargeCssField'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_settings']['enlargeCssField'],
+    'inputType' => 'checkbox', 
+    'eval'      => array('tl_class' => 'w50 m12'),
+    'sql'       => "char(1) NOT NULL default ''"
+];
+
 PaletteManipulator::create()
     ->addLegend('CustomBackendSettings', 'backend_legend', PaletteManipulator::POSITION_AFTER)
     
     ->addField('publishPageOnCreate', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('publishArticleOnCreate', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
+    ->addField('highlightFilteredPageTree', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
+    ->addField('highlightSearchedPageTree', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
+    ->addField('enlargeCssField', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     
     ->applyToPalette('default', 'tl_settings') 
 ;

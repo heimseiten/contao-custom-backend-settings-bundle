@@ -4,3 +4,8 @@ $GLOBALS['TL_LANG']['tl_settings']['CustomBackendSettings'] = 'Custom backend se
 
 $GLOBALS['TL_LANG']['tl_settings']['publishArticleOnCreate'] = array('publish article on create', '');
 $GLOBALS['TL_LANG']['tl_settings']['publishPageOnCreate'] = array('publish pagel on create', '');
+
+$GLOBALS['TL_LANG']['tl_settings']['highlightFilteredPageTree'] = array('highlight filtered page tree', '');
+$GLOBALS['TL_LANG']['tl_settings']['highlightSearchedPageTree'] = array('highlight searched page tree', '');
+
+$GLOBALS['TL_LANG']['tl_settings']['enlargeCssField'] = array('enlarge css field', '');

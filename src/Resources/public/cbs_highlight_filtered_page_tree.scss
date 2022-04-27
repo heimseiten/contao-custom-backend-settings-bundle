@@ -1,0 +1,4 @@
+.tl_listing_container.tree_view #tl_breadcrumb li:first-child a:after { content: " Inhalte anzeigen"; }
+.tl_listing_container.tree_view #tl_breadcrumb li:first-child a:after { animation: pulsate 2s ease-in-out; animation-iteration-count: infinite; color: #f47c00; letter-spacing: 0.5px; }
+.tl_listing_container.tree_view #tl_breadcrumb li:first-child a { animation: pulsate 2s ease-in-out; animation-iteration-count: infinite; color: #f47c00; letter-spacing: 0.5px; }
+@keyframes pulsate { 0% { color: #f47c00; letter-spacing: 0.5px; } 50% { color: #000; letter-spacing: 0; } 100% { color: #f47c00; letter-spacing: 0.5px; } }

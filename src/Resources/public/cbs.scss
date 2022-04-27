@@ -1,0 +1,18 @@
+/*************************************************************** Form Optionen von Checkbox-, Select- und Radiofeldern - begin **********************************************/
+.tl_optionwizard, .tl_key_value_wizard { max-width: 100%; }
+/*************************************************************** Form Optionen von Checkbox-, Select- und Radiofeldern - end **********************************************/
+
+/*************************************************************** marcel-mathias-nolte/contao-filesmanger-fileusage - begin **********************************************/
+.tl_listing_container .tl_right { position: relative; }
+.tl_listing_container .tl_right a.fileusage { position: absolute; left: -15px; }
+.tl_listing_container .tl_right a.fileusage img[src="bundles/contaofilesmanagerfileusage/icons/link-inactive.svg"] { opacity: 0; }
+/*************************************************************** marcel-mathias-nolte/contao-filesmanger-fileusage - end **********************************************/
+
+ /*************************************************************** Metamodels Filter - begin **********************************************/
+.tl_form.dc_general_panel .tl_filter.tl_subpanel strong { width: 49%; }
+.tl_form.dc_general_panel .tl_filter.tl_subpanel .tl_select { width: 50%; margin-left: 1%; max-width: none; }
+.tl_form.dc_general_panel .tl_filter.tl_subpanel { width: 50%; }
+.tl_form.dc_general_panel .tl_subpanel.tl_limit { padding-left: 30%; }
+.tl_form.dc_general_panel .tl_subpanel.tl_sorting { width: 41.7%; padding-left: 50%; }
+.tl_form.dc_general_panel .tl_subpanel.tl_search { width: 64.3%; }
+/*************************************************************** Metamodels Filter - end **********************************************/
