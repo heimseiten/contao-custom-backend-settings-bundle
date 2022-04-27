@@ -2,8 +2,8 @@
     "name": "heimseiten/contao-custom-backend-settings-bundle",
     "description": "Contao-Custom-Backend-Settings",
     "keywords": [
-        "contao",
-        "backend"
+        "Kopie Label",
+        "CSS Feld"
     ],
     "type": "contao-bundle",
     "license": "GPL-3.0-or-later",

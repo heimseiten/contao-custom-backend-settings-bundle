@@ -38,6 +38,13 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['enlargeCssField'] = [
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
+$GLOBALS['TL_DCA']['tl_settings']['fields']['copiedPageOrArticleWithoutLabelCopy'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_settings']['copiedPageOrArticleWithoutLabelCopy'],
+    'inputType' => 'checkbox', 
+    'eval'      => array('tl_class' => 'w50 m12'),
+    'sql'       => "char(1) NOT NULL default ''"
+];
+
 PaletteManipulator::create()
     ->addLegend('CustomBackendSettings', 'backend_legend', PaletteManipulator::POSITION_AFTER)
     
@@ -46,6 +53,7 @@ PaletteManipulator::create()
     ->addField('highlightFilteredPageTree', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('highlightSearchedPageTree', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('enlargeCssField', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
+    ->addField('copiedPageOrArticleWithoutLabelCopy', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     
     ->applyToPalette('default', 'tl_settings') 
 ;
