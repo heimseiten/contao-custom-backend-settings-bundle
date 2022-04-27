@@ -17,6 +17,20 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['publishArticleOnCreate'] = [
     'sql'       => "char(1) NOT NULL default ''" 
 ];
 
+$GLOBALS['TL_DCA']['tl_settings']['fields']['publishNewsOnCreate'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_settings']['publishNewsOnCreate'],
+    'inputType' => 'checkbox', 
+    'eval'      => array('tl_class' => 'w50'),
+    'sql'       => "char(1) NOT NULL default ''" 
+];
+
+$GLOBALS['TL_DCA']['tl_settings']['fields']['publishEventOnCreate'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_settings']['publishEventOnCreate'],
+    'inputType' => 'checkbox', 
+    'eval'      => array('tl_class' => 'w50'),
+    'sql'       => "char(1) NOT NULL default ''" 
+];
+
 $GLOBALS['TL_DCA']['tl_settings']['fields']['highlightFilteredPageTree'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_settings']['highlightFilteredPageTree'],
     'inputType' => 'checkbox', 
@@ -64,6 +78,8 @@ PaletteManipulator::create()
     
     ->addField('publishPageOnCreate', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('publishArticleOnCreate', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
+    ->addField('publishNewsOnCreate', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
+    ->addField('publishEventOnCreate', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('highlightFilteredPageTree', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('highlightSearchedPageTree', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('enlargeCssField', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)

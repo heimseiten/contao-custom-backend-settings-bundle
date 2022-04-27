@@ -9,4 +9,6 @@ if ( \Config::get('copyEventsWithAllDetails') ) {
     $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['published']['eval']['doNotCopy'] = false;
 }
 
-$GLOBALS['TL_DCA']['tl_calendar_events']['fields']['published']['default'] = true;
+if ( \Config::get('publishEventOnCreate') ) {
+    $GLOBALS['TL_DCA']['tl_calendar_events']['fields']['published']['default'] = true;
+}
