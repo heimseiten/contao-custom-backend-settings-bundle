@@ -45,6 +45,5 @@
     },
     "extra": {
         "contao-manager-plugin": "Heimseiten\\ContaoCustomBackendSettingsBundle\\ContaoManager\\Plugin"
-    },
-    "version": "0.0.1"
+    }
 }
