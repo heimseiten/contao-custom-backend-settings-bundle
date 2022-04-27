@@ -11,7 +11,7 @@ if (TL_MODE == 'BE') {
     }
 
     if ( \Config::get('enlargeCssField') ) {
-        $GLOBALS['TL_CSS'][] = 'bundles/heimseitencontaocustombackendsettings/enlarge_css_field.scss|static';
+        $GLOBALS['TL_CSS'][] = 'bundles/heimseitencontaocustombackendsettings/cbs_enlarge_css_field.scss|static';
     }
     
     $GLOBALS['TL_CSS'][] = 'bundles/heimseitencontaocustombackendsettings/cbs.scss|static';
