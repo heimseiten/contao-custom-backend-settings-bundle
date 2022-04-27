@@ -13,4 +13,4 @@ $GLOBALS['TL_LANG']['tl_settings']['copiedPageOrArticleWithoutLabelCopy'] = arra
 $GLOBALS['TL_LANG']['tl_settings']['copyEventsWithAllDetails'] = array('Events mit allen Details, wie bspw. Datum, Veröffentlichungsstatus usw., kopieren', '');
 $GLOBALS['TL_LANG']['tl_settings']['copyNewsWithAllDetails'] = array('Nachrichten mit allen Details, wie bspw. Datum, Veröffentlichungsstatus usw., kopieren', '');
 $GLOBALS['TL_LANG']['tl_settings']['formFieldAllowHtml'] = array('HTML in Formularfeldern erlauben', '');
-$GLOBALS['TL_LANG']['tl_settings']['memberFieldsNotMandatory'] = array('Vorname, Nachname und Land in den Mitgliederdaten nicht verpflichtet', '');
+$GLOBALS['TL_LANG']['tl_settings']['memberFieldsNotMandatory'] = array('Vorname, Nachname und Land in den Mitgliederdaten nicht verpflichtent', '');
