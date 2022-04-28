@@ -7,3 +7,7 @@ if (TL_MODE == 'BE') {
     }
 
 }
+
+if ( \Config::get('readMoreLabelDe') ) {    
+    $GLOBALS['TL_LANG']['MSC']['more']  = \Config::get('readMoreLabelDe');
+}

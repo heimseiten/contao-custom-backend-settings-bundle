@@ -87,6 +87,20 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['copyEventsWithAllDetails'] = [
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
+$GLOBALS['TL_DCA']['tl_settings']['fields']['readMoreLabelDe'] = [
+    'label'     => &$GLOBALS['TL_LANG']['tl_article']['readMoreLabelDe'],
+    'inputType' => 'text',
+    'eval'      => array('tl_class'=>'w50'),
+    'sql'       => "text NULL"
+];
+
+$GLOBALS['TL_DCA']['tl_settings']['fields']['readMoreLabelEn'] = [
+    'label'     => &$GLOBALS['TL_LANG']['tl_article']['readMoreLabelEn'],
+    'inputType' => 'text',
+    'eval'      => array('tl_class'=>'w50'),
+    'sql'       => "text NULL"
+];
+
 PaletteManipulator::create()
     ->addLegend('CustomBackendSettings', 'backend_legend', PaletteManipulator::POSITION_AFTER)
     
@@ -102,6 +116,8 @@ PaletteManipulator::create()
     ->addField('copyEventsWithAllDetails', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('memberFieldsNotMandatory', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('formFieldAllowHtml', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
+    ->addField('readMoreLabelDe', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
+    ->addField('readMoreLabelEn', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     
     ->applyToPalette('default', 'tl_settings') 
 ;

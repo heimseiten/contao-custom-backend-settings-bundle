@@ -14,3 +14,5 @@ $GLOBALS['TL_LANG']['tl_settings']['copyEventsWithAllDetails'] = array('Events m
 $GLOBALS['TL_LANG']['tl_settings']['copyNewsWithAllDetails'] = array('Nachrichten mit allen Details, wie bspw. Datum, Veröffentlichungsstatus usw., kopieren', '');
 $GLOBALS['TL_LANG']['tl_settings']['formFieldAllowHtml'] = array('HTML in Formularfeldern erlauben', '');
 $GLOBALS['TL_LANG']['tl_settings']['memberFieldsNotMandatory'] = array('Vorname, Nachname und Land in den Mitgliederdaten nicht verpflichtent', '');
+$GLOBALS['TL_LANG']['tl_settings']['readMoreLabelDe'] = array('deutsche Beschriftung für den "Weiterlesen"-Link', '');
+$GLOBALS['TL_LANG']['tl_settings']['readMoreLabelEn'] = array('englische Beschriftung für den "Weiterlesen"-Link', '');
