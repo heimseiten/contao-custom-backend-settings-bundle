@@ -16,3 +16,5 @@ $GLOBALS['TL_LANG']['tl_settings']['formFieldAllowHtml'] = array('HTML in Formul
 $GLOBALS['TL_LANG']['tl_settings']['memberFieldsNotMandatory'] = array('Vorname, Nachname und Land in den Mitgliederdaten nicht verpflichtent', '');
 $GLOBALS['TL_LANG']['tl_settings']['readMoreLabelDe'] = array('deutsche Beschriftung für den "Weiterlesen"-Link', '');
 $GLOBALS['TL_LANG']['tl_settings']['readMoreLabelEn'] = array('englische Beschriftung für den "Weiterlesen"-Link', '');
+$GLOBALS['TL_LANG']['tl_settings']['previousLabelDe'] = array('englische Beschriftung für den "Zurück"-Link', '');
+$GLOBALS['TL_LANG']['tl_settings']['nextLabelDe'] = array('englische Beschriftung für den "Vorwärts"-Link', '');

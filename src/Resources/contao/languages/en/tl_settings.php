@@ -16,3 +16,5 @@ $GLOBALS['TL_LANG']['tl_settings']['formFieldAllowHtml'] = array('allow html in 
 $GLOBALS['TL_LANG']['tl_settings']['memberFieldsNotMandatory'] = array('firstname, lastname and country not mandatory in member data', '');
 $GLOBALS['TL_LANG']['tl_settings']['readMoreLabelDe'] = array('german label for the "Read more" link', '');
 $GLOBALS['TL_LANG']['tl_settings']['readMoreLabelEn'] = array('english label for the "Read more" link', '');
+$GLOBALS['TL_LANG']['tl_settings']['nextLabelEn'] = array('english label for the "next" link', '');
+$GLOBALS['TL_LANG']['tl_settings']['previousLabelEn'] = array('english label for the "previous" link', '');
