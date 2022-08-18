@@ -14,7 +14,12 @@ $GLOBALS['TL_LANG']['tl_settings']['copyEventsWithAllDetails'] = array('echtes k
 $GLOBALS['TL_LANG']['tl_settings']['copyNewsWithAllDetails'] = array('echtes kopieren von News', 'Nachrichten mit allen Details, wie bspw. Datum, Veröffentlichungsstatus usw., kopieren');
 $GLOBALS['TL_LANG']['tl_settings']['formFieldAllowHtml'] = array('HTML in Formularfeldern erlauben', '');
 $GLOBALS['TL_LANG']['tl_settings']['memberFieldsNotMandatory'] = array('Vorname, Nachname & Land nicht Pflichtfelder', 'Vorname, Nachname und Land in den Mitgliederdaten nicht verpflichtent');
-$GLOBALS['TL_LANG']['tl_settings']['readMoreLabelDe'] = array('deutsche Beschriftung für den "Weiterlesen"-Link', '');
-$GLOBALS['TL_LANG']['tl_settings']['readMoreLabelEn'] = array('englische Beschriftung für den "Weiterlesen"-Link', '');
-$GLOBALS['TL_LANG']['tl_settings']['previousLabelDe'] = array('englische Beschriftung für den "Zurück"-Link', '');
-$GLOBALS['TL_LANG']['tl_settings']['nextLabelDe'] = array('englische Beschriftung für den "Vorwärts"-Link', '');
+
+$GLOBALS['TL_LANG']['tl_settings']['readMoreLabelDe'] = array('"Weiterlesen"-Link - deutsche Beschriftung', '');
+$GLOBALS['TL_LANG']['tl_settings']['readMoreLabelEn'] = array('"Weiterlesen"-Link - englische Beschriftung', '');
+
+$GLOBALS['TL_LANG']['tl_settings']['previousLabelDe'] = array('"Zurück"-Link - deutsche Beschriftung', '');
+$GLOBALS['TL_LANG']['tl_settings']['nextLabelDe'] = array('"Vorwärts"-Link - deutsche Beschriftung', '');
+
+$GLOBALS['TL_LANG']['tl_settings']['previousLabelEn'] = array('Zurück"-Link - englische Beschriftung', '');
+$GLOBALS['TL_LANG']['tl_settings']['nextLabelEn'] = array('"Vorwärts"-Link - englische Beschriftung', '');

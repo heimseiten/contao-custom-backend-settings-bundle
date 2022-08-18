@@ -14,7 +14,13 @@ $GLOBALS['TL_LANG']['tl_settings']['copyEventsWithAllDetails'] = array('copy eve
 $GLOBALS['TL_LANG']['tl_settings']['copyNewsWithAllDetails'] = array('copy nachrichten with all details', '');
 $GLOBALS['TL_LANG']['tl_settings']['formFieldAllowHtml'] = array('allow html in form field', '');
 $GLOBALS['TL_LANG']['tl_settings']['memberFieldsNotMandatory'] = array('firstname, lastname and country not mandatory in member data', '');
-$GLOBALS['TL_LANG']['tl_settings']['readMoreLabelDe'] = array('german label for the "Read more" link', '');
-$GLOBALS['TL_LANG']['tl_settings']['readMoreLabelEn'] = array('english label for the "Read more" link', '');
-$GLOBALS['TL_LANG']['tl_settings']['nextLabelEn'] = array('english label for the "next" link', '');
-$GLOBALS['TL_LANG']['tl_settings']['previousLabelEn'] = array('english label for the "previous" link', '');
+
+
+$GLOBALS['TL_LANG']['tl_settings']['readMoreLabelDe'] = array('"Read more"-Link - German label', '');
+$GLOBALS['TL_LANG']['tl_settings']['readMoreLabelEn'] = array('"Read more"-Link - English label', '');
+
+$GLOBALS['TL_LANG']['tl_settings']['previousLabelDe'] = array('"Back"-Link - German label', '');
+$GLOBALS['TL_LANG']['tl_settings']['nextLabelDe'] = array('"Forward"-Link - German label', '');
+
+$GLOBALS['TL_LANG']['tl_settings']['previousLabelEn'] = array('Back"-Link - English label', '');
+$GLOBALS['TL_LANG']['tl_settings']['nextLabelEn'] = array('"Forward"-Link - English label', '');
