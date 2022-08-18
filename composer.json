@@ -22,7 +22,7 @@
         "source": "https://github.com/heimseiten/contao-custom-backend-settings-bundle"
     },
     "require": {
-        "contao/core-bundle": "^4.9"
+        "contao/core-bundle": "^4.9 || 5.0.0-RC4"
     },
     "require-dev": {
         "contao/easy-coding-standard": "^4.0",
