@@ -144,10 +144,13 @@ PaletteManipulator::create()
     ->addField('copyEventsWithAllDetails', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('memberFieldsNotMandatory', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('formFieldAllowHtml', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
+  
     ->addField('readMoreLabelDe', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('readMoreLabelEn', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
+  
     ->addField('previousLabelDe', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('previousLabelEn', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
+  
     ->addField('nextLabelDe', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('nextLabelEn', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     
