@@ -5,7 +5,8 @@
         "Kopie Label",
         "CSS Feld",
         "News kopieren",
-        "Events kopieren"
+        "Events kopieren",
+        "Einstellungen"
     ],
     "type": "contao-bundle",
     "license": "GPL-3.0-or-later",
