@@ -12,7 +12,7 @@ $GLOBALS['TL_LANG']['tl_settings']['enlargeCssField'] = array('Feld "CSS-Klasse"
 $GLOBALS['TL_LANG']['tl_settings']['copiedPageOrArticleWithoutLabelCopy'] = array('Kopieren ohne "(Kopie)" anzuhängen', 'beim Kopieren von Seiten oder Artikeln nicht "(Kopie)" an den Namen hängen');
 $GLOBALS['TL_LANG']['tl_settings']['copyEventsWithAllDetails'] = array('echtes kopieren von Events', 'Events mit allen Details, wie bspw. Datum, Veröffentlichungsstatus usw., kopieren');
 $GLOBALS['TL_LANG']['tl_settings']['copyNewsWithAllDetails'] = array('echtes kopieren von News', 'Nachrichten mit allen Details, wie bspw. Datum, Veröffentlichungsstatus usw., kopieren');
-$GLOBALS['TL_LANG']['tl_settings']['formFieldAllowHtml'] = array('HTML in Formularfeldern erlauben', '');
+$GLOBALS['TL_LANG']['tl_settings']['formFieldAllowHtml'] = array('HTML in Formularfeldern erlauben', 'Um bspw. einen Zeilenumbruch mit &lt;br&gt; in der Feldbezeichnung einzufügen.');
 $GLOBALS['TL_LANG']['tl_settings']['memberFieldsNotMandatory'] = array('Vorname, Nachname & Land nicht Pflichtfelder', 'Vorname, Nachname und Land in den Mitgliederdaten nicht verpflichtent');
 
 $GLOBALS['TL_LANG']['tl_settings']['readMoreLabelDe'] = array('"Weiterlesen"-Link - deutsche Beschriftung', '');
