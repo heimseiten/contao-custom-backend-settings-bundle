@@ -17,6 +17,14 @@ if (System::getContainer()->get('contao.routing.scope_matcher')->isBackendReques
                 $GLOBALS['TL_CSS'][] = 'bundles/heimseitencontaocustombackendsettings/cbs_enlarge_css_field.scss|static';
         }
     
+        if ( Contao\Config::get('enlargeOptionField') ) {
+                $GLOBALS['TL_CSS'][] = 'bundles/heimseitencontaocustombackendsettings/cbs_enlarge_option_field.scss|static';
+        }
+        
+        if ( Contao\Config::get('enlargeTableFields') ) {
+                $GLOBALS['TL_CSS'][] = 'bundles/heimseitencontaocustombackendsettings/cbs_enlarge_table_fields.scss|static';
+        }
+    
         $GLOBALS['TL_CSS'][] = 'bundles/heimseitencontaocustombackendsettings/cbs.scss|static';
 
 }
