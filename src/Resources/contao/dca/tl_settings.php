@@ -41,21 +41,35 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['highlightFilteredPageTree'] = [
 $GLOBALS['TL_DCA']['tl_settings']['fields']['highlightSearchedPageTree'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_settings']['highlightSearchedPageTree'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50 m12 border_bottom border_top'),
+    'eval'      => array('tl_class' => 'w50 border_bottom border_top'),
+    'sql'       => "char(1) NOT NULL default ''"
+];
+
+$GLOBALS['TL_DCA']['tl_settings']['fields']['enlargeOptionField'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_settings']['enlargeOptionField'],
+    'inputType' => 'checkbox', 
+    'eval'      => array('tl_class' => 'w50 border_bottom border_top'),
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
 $GLOBALS['TL_DCA']['tl_settings']['fields']['enlargeCssField'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_settings']['enlargeCssField'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50 m12 clr border_bottom border_top'),
+    'eval'      => array('tl_class' => 'w50 clr border_bottom border_top'),
+    'sql'       => "char(1) NOT NULL default ''"
+];
+
+$GLOBALS['TL_DCA']['tl_settings']['fields']['enlargeTableFields'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_settings']['enlargeTableFields'],
+    'inputType' => 'checkbox', 
+    'eval'      => array('tl_class' => 'w50 clr border_bottom'),
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
 $GLOBALS['TL_DCA']['tl_settings']['fields']['formFieldAllowHtml'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_settings']['formFieldAllowHtml'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50 m12 border_bottom border_top'),
+    'eval'      => array('tl_class' => 'w50 border_bottom'),
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
@@ -145,6 +159,8 @@ PaletteManipulator::create()
     ->addField('memberFieldsNotMandatory', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     
     ->addField('enlargeCssField', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
+    ->addField('enlargeOptionField', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
+    ->addField('enlargeTableFields', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('formFieldAllowHtml', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
   
     ->addField('readMoreLabelDe', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
