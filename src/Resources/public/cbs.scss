@@ -1,3 +1,13 @@
 /*************************************************************** Form Optionen von Checkbox-, Select- und Radiofeldern - begin **********************************************/
 .tl_optionwizard, .tl_key_value_wizard { max-width: 100%; }
 /*************************************************************** Form Optionen von Checkbox-, Select- und Radiofeldern - end **********************************************/
+.widget.border_top { 
+    border-top: 1px solid var(--border); 
+    margin-top: 30px; 
+    padding-top: 16px; 
+}
+.widget.border_bottom { 
+    border-bottom: 1px solid var(--border); 
+    margin-bottom: 16px; 
+    padding-bottom: 30px; 
+}
