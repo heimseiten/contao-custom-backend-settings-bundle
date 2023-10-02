@@ -34,28 +34,28 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['publishEventOnCreate'] = [
 $GLOBALS['TL_DCA']['tl_settings']['fields']['highlightFilteredPageTree'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_settings']['highlightFilteredPageTree'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50 m12'),
+    'eval'      => array('tl_class' => 'w50 m12 border_bottom border_top'),
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
 $GLOBALS['TL_DCA']['tl_settings']['fields']['highlightSearchedPageTree'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_settings']['highlightSearchedPageTree'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50 m12'),
+    'eval'      => array('tl_class' => 'w50 m12 border_bottom border_top'),
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
 $GLOBALS['TL_DCA']['tl_settings']['fields']['enlargeCssField'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_settings']['enlargeCssField'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50 m12'),
+    'eval'      => array('tl_class' => 'w50 m12 clr border_bottom border_top'),
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
 $GLOBALS['TL_DCA']['tl_settings']['fields']['formFieldAllowHtml'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_settings']['formFieldAllowHtml'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50 m12'),
+    'eval'      => array('tl_class' => 'w50 m12 border_bottom border_top'),
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
@@ -91,14 +91,14 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['copyEventsWithAllDetails'] = [
 $GLOBALS['TL_DCA']['tl_settings']['fields']['readMoreLabelDe'] = [
     'label'     => &$GLOBALS['TL_LANG']['tl_article']['readMoreLabelDe'],
     'inputType' => 'text',
-    'eval'      => array('tl_class'=>'w50 clr'),
+    'eval'      => array('tl_class'=>'w50 clr border_bottom'),
     'sql'       => "text NULL"
 ];
 
 $GLOBALS['TL_DCA']['tl_settings']['fields']['readMoreLabelEn'] = [
     'label'     => &$GLOBALS['TL_LANG']['tl_article']['readMoreLabelEn'],
     'inputType' => 'text',
-    'eval'      => array('tl_class'=>'w50'),
+    'eval'      => array('tl_class'=>'w50 border_bottom'),
     'sql'       => "text NULL"
 ];
 
