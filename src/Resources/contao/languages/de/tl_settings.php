@@ -10,8 +10,8 @@ $GLOBALS['TL_LANG']['tl_settings']['highlightFilteredPageTree'] = array('gefilte
 $GLOBALS['TL_LANG']['tl_settings']['highlightSearchedPageTree'] = array('durchsuchten Seitenbaum hervorheben', '');
 $GLOBALS['TL_LANG']['tl_settings']['enlargeCssField'] = array('Feld "CSS-Klasse" verlängern', 'Verlängert das Feld "CSS-Klasse" in den Einstellungen der Artikel und der Inhaltselemente, so dass es auch nach dem eintragen von mehreren Klassen noch übersichtlich ist.');
 $GLOBALS['TL_LANG']['tl_settings']['copiedPageOrArticleWithoutLabelCopy'] = array('Kopieren ohne "(Kopie)" anzuhängen', 'beim Kopieren von Seiten oder Artikeln nicht "(Kopie)" an den Namen hängen');
-$GLOBALS['TL_LANG']['tl_settings']['copyEventsWithAllDetails'] = array('echtes kopieren von Events', 'Events mit allen Details, wie bspw. Datum, Veröffentlichungsstatus usw., kopieren');
-$GLOBALS['TL_LANG']['tl_settings']['copyNewsWithAllDetails'] = array('echtes kopieren von News', 'Nachrichten mit allen Details, wie bspw. Datum, Veröffentlichungsstatus usw., kopieren');
+$GLOBALS['TL_LANG']['tl_settings']['copyEventsWithAllDetails'] = array('echtes Kopieren von Events', 'Events mit allen Details, wie bspw. Datum, Veröffentlichungsstatus usw., kopieren');
+$GLOBALS['TL_LANG']['tl_settings']['copyNewsWithAllDetails'] = array('echtes Kopieren von News', 'Nachrichten mit allen Details, wie bspw. Datum, Veröffentlichungsstatus usw., kopieren');
 $GLOBALS['TL_LANG']['tl_settings']['formFieldAllowHtml'] = array('HTML in Formularfeldern erlauben', 'Um bspw. einen Zeilenumbruch mit &lt;br&gt; in der Feldbezeichnung einzufügen.');
 $GLOBALS['TL_LANG']['tl_settings']['memberFieldsNotMandatory'] = array('Vorname, Nachname & Land nicht Pflichtfelder', 'Vorname, Nachname und Land in den Mitgliederdaten nicht verpflichtent');
 
