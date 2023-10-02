@@ -24,6 +24,11 @@ if (System::getContainer()->get('contao.routing.scope_matcher')->isBackendReques
         if ( Contao\Config::get('enlargeTableFields') ) {
                 $GLOBALS['TL_CSS'][] = 'bundles/heimseitencontaocustombackendsettings/cbs_enlarge_table_fields.scss|static';
         }
+        
+        if ( Contao\Config::get('disableButtonAfterClick') ) {
+                $GLOBALS['TL_CSS'][] = 'bundles/heimseitencontaocustombackendsettings/disable_button_after_click.scss|static';
+                $GLOBALS['TL_JAVASCRIPT'][] = 'bundles/heimseitencontaocustombackendsettings/disable_button_after_click.js';
+        }
     
         $GLOBALS['TL_CSS'][] = 'bundles/heimseitencontaocustombackendsettings/cbs.scss|static';
 
