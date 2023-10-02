@@ -66,10 +66,17 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['enlargeTableFields'] = [
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
+$GLOBALS['TL_DCA']['tl_settings']['fields']['disableButtonAfterClick'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_settings']['disableButtonAfterClick'],
+    'inputType' => 'checkbox', 
+    'eval'      => array('tl_class' => 'w50 border_bottom'),
+    'sql'       => "char(1) NOT NULL default ''"
+];
+
 $GLOBALS['TL_DCA']['tl_settings']['fields']['formFieldAllowHtml'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_settings']['formFieldAllowHtml'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50 border_bottom'),
+    'eval'      => array('tl_class' => 'w50 clr border_bottom'),
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
@@ -86,7 +93,6 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['memberFieldsNotMandatory'] = [
     'eval'      => array('tl_class' => 'w25'),
     'sql'       => "char(1) NOT NULL default ''"
 ];
-
 
 $GLOBALS['TL_DCA']['tl_settings']['fields']['copyNewsWithAllDetails'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_settings']['copyNewsWithAllDetails'],
@@ -161,6 +167,7 @@ PaletteManipulator::create()
     ->addField('enlargeCssField', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('enlargeOptionField', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('enlargeTableFields', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
+    ->addField('disableButtonAfterClick', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('formFieldAllowHtml', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
   
     ->addField('readMoreLabelDe', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
