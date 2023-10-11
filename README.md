@@ -1,3 +1,3 @@
 # Contao-Custom-Backend-Settings
 
-<img width="2188" alt="Bildschirmfoto 2023-10-02 um 16 05 10" src="https://github.com/heimseiten/contao-custom-backend-settings/assets/6552484/1a66cd4f-7347-4b30-be30-254ce6b6c1f9">
+<img width="1917" alt="Bildschirmfoto 2023-10-11 um 12 16 13" src="https://github.com/heimseiten/contao-custom-backend-settings-bundle/assets/6552484/8a55b33a-ba34-4a3b-a630-b7e76eaa4220">
