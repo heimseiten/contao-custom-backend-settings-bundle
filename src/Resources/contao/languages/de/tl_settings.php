@@ -9,7 +9,7 @@ $GLOBALS['TL_LANG']['tl_settings']['publishPageOnCreate']   = array('Seite direk
 $GLOBALS['TL_LANG']['tl_settings']['publishNewsOnCreate']   = array('Nachricht direkt veröffentlichen', 'Nachricht beim Neuerstellen direkt veröffentlichen');
 $GLOBALS['TL_LANG']['tl_settings']['publishEventOnCreate']   = array('Event direkt veröffentlichen', 'Event beim Neuerstellen direkt veröffentlichen');
 $GLOBALS['TL_LANG']['tl_settings']['formFieldAllowHtml'] = array('HTML in Formularfeldern erlauben', 'Um bspw. einen Zeilenumbruch mit &lt;br&gt; in der Feldbezeichnung einzufügen.');
-
+$GLOBALS['TL_LANG']['tl_settings']['addParagraphOptionToHeadlineField'] = array('Paragraf in Feld "Überschrift" hinzufügen', '');
 
 $GLOBALS['TL_LANG']['tl_settings']['highlightFilteredPageTree'] = array('gefilterten Seitenbaum hervorheben', '');
 $GLOBALS['TL_LANG']['tl_settings']['highlightSearchedPageTree'] = array('durchsuchten Seitenbaum hervorheben', '');
