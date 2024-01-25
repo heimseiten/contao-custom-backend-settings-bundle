@@ -16,6 +16,7 @@ PaletteManipulator::create()
     ->addField('copyEventsWithAllDetails', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('memberFieldsNotMandatory', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
     ->addField('formFieldAllowHtml', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
+    ->addField('addParagraphOptionToHeadlineField', 'CustomBackendSettings', PaletteManipulator::POSITION_APPEND)
   
     ->addField('enlargeCssField', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('enlargeOptionField', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
@@ -108,7 +109,14 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['disableButtonAfterClick'] = [
 $GLOBALS['TL_DCA']['tl_settings']['fields']['formFieldAllowHtml'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_settings']['formFieldAllowHtml'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50 clr'),
+    'eval'      => array('tl_class' => 'w25'),
+    'sql'       => "char(1) NOT NULL default ''"
+];
+
+$GLOBALS['TL_DCA']['tl_settings']['fields']['addParagraphOptionToHeadlineField'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_settings']['addParagraphOptionToHeadlineField'],
+    'inputType' => 'checkbox', 
+    'eval'      => array('tl_class' => 'w25'),
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
