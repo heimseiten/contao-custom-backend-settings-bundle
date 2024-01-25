@@ -14,6 +14,7 @@ $GLOBALS['TL_LANG']['tl_settings']['copyEventsWithAllDetails'] = array('copy eve
 $GLOBALS['TL_LANG']['tl_settings']['copyNewsWithAllDetails'] = array('copy nachrichten with all details', '');
 $GLOBALS['TL_LANG']['tl_settings']['formFieldAllowHtml'] = array('allow html in form field', '');
 $GLOBALS['TL_LANG']['tl_settings']['memberFieldsNotMandatory'] = array('firstname, lastname and country not mandatory in member data', '');
+$GLOBALS['TL_LANG']['tl_settings']['addParagraphOptionToHeadlineField'] = array('Add a paragraph option to headline field', '');
 
 
 $GLOBALS['TL_LANG']['tl_settings']['readMoreLabelDe'] = array('"Read more"-Link - German label', '');
