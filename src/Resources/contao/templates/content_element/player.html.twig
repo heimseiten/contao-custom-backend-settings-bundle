@@ -1,0 +1,14 @@
+{% extends "@Contao/content_element/player.html.twig" %}
+
+{# Added #t=0.001 to view thumbnail of iOS #}
+
+{% block media %}
+    <{{ figure.media.type }}{{ figure.media.attributes }}>
+        {% for source_attributes in figure.media.sources %}
+          {% set source_attributes = attrs(source_attributes|default)
+              .set('src', source_attributes['src'] ~ '#t=0.001')
+          %}            
+          <source{{ source_attributes }}>
+        {% endfor %}
+    </{{ figure.media.type }}>
+{% endblock %}
