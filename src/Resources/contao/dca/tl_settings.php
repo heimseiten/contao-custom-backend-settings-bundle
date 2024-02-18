@@ -27,10 +27,21 @@ PaletteManipulator::create()
     
     ->addField('readMoreLabelDe', 'CustomBackendSettingsLabels', PaletteManipulator::POSITION_APPEND)
     ->addField('readMoreLabelEn', 'CustomBackendSettingsLabels', PaletteManipulator::POSITION_APPEND)
+    
     ->addField('previousLabelDe', 'CustomBackendSettingsLabels', PaletteManipulator::POSITION_APPEND)
     ->addField('previousLabelEn', 'CustomBackendSettingsLabels', PaletteManipulator::POSITION_APPEND)
+    
     ->addField('nextLabelDe', 'CustomBackendSettingsLabels', PaletteManipulator::POSITION_APPEND)
     ->addField('nextLabelEn', 'CustomBackendSettingsLabels', PaletteManipulator::POSITION_APPEND)
+    
+    ->addField('lastLabelDe', 'CustomBackendSettingsLabels', PaletteManipulator::POSITION_APPEND)
+    ->addField('lastLabelEn', 'CustomBackendSettingsLabels', PaletteManipulator::POSITION_APPEND)
+    
+    ->addField('firstLabelDe', 'CustomBackendSettingsLabels', PaletteManipulator::POSITION_APPEND)
+    ->addField('firstLabelEn', 'CustomBackendSettingsLabels', PaletteManipulator::POSITION_APPEND)
+    
+    ->addField('newsOverviewDe', 'CustomBackendSettingsLabels', PaletteManipulator::POSITION_APPEND)
+    ->addField('newsOverviewEn', 'CustomBackendSettingsLabels', PaletteManipulator::POSITION_APPEND)
     
     ->applyToPalette('default', 'tl_settings') 
 ;
@@ -162,13 +173,6 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['readMoreLabelEn'] = [
     'sql'       => "text NULL"
 ];
 
-$GLOBALS['TL_DCA']['tl_settings']['fields']['nextLabelDe'] = [
-    'label'     => &$GLOBALS['TL_LANG']['tl_article']['nextLabelDe'],
-    'inputType' => 'text',
-    'eval'      => array('tl_class'=>'w25'),
-    'sql'       => "text NULL"
-];
-
 $GLOBALS['TL_DCA']['tl_settings']['fields']['previousLabelDe'] = [
     'label'     => &$GLOBALS['TL_LANG']['tl_article']['previousLabelDe'],
     'inputType' => 'text',
@@ -176,8 +180,57 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['previousLabelDe'] = [
     'sql'       => "text NULL"
 ];
 
+$GLOBALS['TL_DCA']['tl_settings']['fields']['nextLabelDe'] = [
+    'label'     => &$GLOBALS['TL_LANG']['tl_article']['nextLabelDe'],
+    'inputType' => 'text',
+    'eval'      => array('tl_class'=>'w25'),
+    'sql'       => "text NULL"
+];
+
 $GLOBALS['TL_DCA']['tl_settings']['fields']['nextLabelEn'] = [
     'label'     => &$GLOBALS['TL_LANG']['tl_article']['nextLabelEn'],
+    'inputType' => 'text',
+    'eval'      => array('tl_class'=>'w25'),
+    'sql'       => "text NULL"
+];
+
+$GLOBALS['TL_DCA']['tl_settings']['fields']['lastLabelDe'] = [
+    'label'     => &$GLOBALS['TL_LANG']['tl_article']['lastLabelDe'],
+    'inputType' => 'text',
+    'eval'      => array('tl_class'=>'w25'),
+    'sql'       => "text NULL"
+];
+
+$GLOBALS['TL_DCA']['tl_settings']['fields']['lastLabelEn'] = [
+    'label'     => &$GLOBALS['TL_LANG']['tl_article']['lastLabelEn'],
+    'inputType' => 'text',
+    'eval'      => array('tl_class'=>'w25'),
+    'sql'       => "text NULL"
+];
+
+$GLOBALS['TL_DCA']['tl_settings']['fields']['firstLabelDe'] = [
+    'label'     => &$GLOBALS['TL_LANG']['tl_article']['firstLabelDe'],
+    'inputType' => 'text',
+    'eval'      => array('tl_class'=>'w25'),
+    'sql'       => "text NULL"
+];
+
+$GLOBALS['TL_DCA']['tl_settings']['fields']['firstLabelEn'] = [
+    'label'     => &$GLOBALS['TL_LANG']['tl_article']['firstLabelEn'],
+    'inputType' => 'text',
+    'eval'      => array('tl_class'=>'w25'),
+    'sql'       => "text NULL"
+];
+
+$GLOBALS['TL_DCA']['tl_settings']['fields']['newsOverviewDe'] = [
+    'label'     => &$GLOBALS['TL_LANG']['tl_article']['newsOverviewDe'],
+    'inputType' => 'text',
+    'eval'      => array('tl_class'=>'w25'),
+    'sql'       => "text NULL"
+];
+
+$GLOBALS['TL_DCA']['tl_settings']['fields']['newsOverviewEn'] = [
+    'label'     => &$GLOBALS['TL_LANG']['tl_article']['newsOverviewEn'],
     'inputType' => 'text',
     'eval'      => array('tl_class'=>'w25'),
     'sql'       => "text NULL"
