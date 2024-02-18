@@ -25,3 +25,8 @@ $GLOBALS['TL_LANG']['tl_settings']['nextLabelDe'] = array('"Forward"-Link - Germ
 
 $GLOBALS['TL_LANG']['tl_settings']['previousLabelEn'] = array('Back"-Link - English label', '');
 $GLOBALS['TL_LANG']['tl_settings']['nextLabelEn'] = array('"Forward"-Link - English label', '');
+
+$GLOBALS['TL_LANG']['tl_settings']['firstLabelEn'] = array('Pagination - "first"-link - English label', '');
+$GLOBALS['TL_LANG']['tl_settings']['lastLabelEn'] = array('Pagination - "last"-link - English label', '');
+
+$GLOBALS['TL_LANG']['tl_settings']['newsOverviewEn'] = array('"Back to the news overview"-link - English label', '');
