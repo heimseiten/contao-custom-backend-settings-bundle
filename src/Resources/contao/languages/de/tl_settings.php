@@ -24,7 +24,14 @@ $GLOBALS['TL_LANG']['tl_settings']['memberFieldsNotMandatory'] = array('Vorname,
 
 $GLOBALS['TL_LANG']['tl_settings']['readMoreLabelDe'] = array('"Weiterlesen"-Link - deutsche Beschriftung', '');
 $GLOBALS['TL_LANG']['tl_settings']['readMoreLabelEn'] = array('"Weiterlesen"-Link - englische Beschriftung', '');
-$GLOBALS['TL_LANG']['tl_settings']['previousLabelDe'] = array('"Zurück"-Link - deutsche Beschriftung', '');
-$GLOBALS['TL_LANG']['tl_settings']['nextLabelDe'] = array('"Vorwärts"-Link - deutsche Beschriftung', '');
-$GLOBALS['TL_LANG']['tl_settings']['previousLabelEn'] = array('Zurück"-Link - englische Beschriftung', '');
-$GLOBALS['TL_LANG']['tl_settings']['nextLabelEn'] = array('"Vorwärts"-Link - englische Beschriftung', '');
+
+$GLOBALS['TL_LANG']['tl_settings']['previousLabelDe'] = array('Seitennummerierung - "Zurück"-Link - deutsche Beschriftung', '');
+$GLOBALS['TL_LANG']['tl_settings']['previousLabelEn'] = array('Seitennummerierung - "Zurück"-Link - englische Beschriftung', '');
+
+$GLOBALS['TL_LANG']['tl_settings']['nextLabelDe'] = array('Seitennummerierung - "Vorwärts"-Link - deutsche Beschriftung', '');
+$GLOBALS['TL_LANG']['tl_settings']['nextLabelEn'] = array('Seitennummerierung - "Vorwärts"-Link - englische Beschriftung', '');
+
+$GLOBALS['TL_LANG']['tl_settings']['firstLabelDe'] = array('Seitennummerierung - "Anfang"-Link - deutsche Beschriftung', '');
+$GLOBALS['TL_LANG']['tl_settings']['lastLabelDe'] = array('Seitennummerierung - "Ende"-Link - deutsche Beschriftung', '');
+
+$GLOBALS['TL_LANG']['tl_settings']['newsOverviewDe'] = array('"Zurück zur Übersicht"-Link - deutsche Beschriftung', '');
