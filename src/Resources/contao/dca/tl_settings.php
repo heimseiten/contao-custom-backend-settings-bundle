@@ -123,7 +123,7 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['addParagraphOptionToHeadlineField']
 $GLOBALS['TL_DCA']['tl_settings']['fields']['copiedPageOrArticleWithoutLabelCopy'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_settings']['copiedPageOrArticleWithoutLabelCopy'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w25'),
+    'eval'      => array('tl_class' => 'w25 clr'),
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
