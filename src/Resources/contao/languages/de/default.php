@@ -20,3 +20,15 @@ if ( Contao\Config::get('previousLabelDe') ) {
 if ( Contao\Config::get('nextLabelDe') ) {    
     $GLOBALS['TL_LANG']['MSC']['next'] = Contao\Config::get('nextLabelDe');
 }
+
+if ( Contao\Config::get('lastLabelDe') ) {    
+    $GLOBALS['TL_LANG']['MSC']['last'] = Contao\Config::get('lastLabelDe');
+}
+
+if ( Contao\Config::get('firstLabelDe') ) {    
+    $GLOBALS['TL_LANG']['MSC']['first'] = Contao\Config::get('firstLabelDe');
+}
+
+if ( Contao\Config::get('newsOverviewDe') ) {    
+    $GLOBALS['TL_LANG']['MSC']['newsOverview'] = Contao\Config::get('newsOverviewDe');
+}
