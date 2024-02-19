@@ -16,6 +16,10 @@ $GLOBALS['TL_LANG']['tl_settings']['formFieldAllowHtml'] = array('allow html in 
 $GLOBALS['TL_LANG']['tl_settings']['memberFieldsNotMandatory'] = array('firstname, lastname and country not mandatory in member data', '');
 $GLOBALS['TL_LANG']['tl_settings']['addParagraphOptionToHeadlineField'] = array('Add a paragraph option to headline field', '');
 
+$GLOBALS['TL_LANG']['tl_settings']['limitBackendWidth'] = array('Limit backend width', 'Limits the width of the backend to 1920 pixels');
+$GLOBALS['TL_LANG']['tl_settings']['enlargePreviewImagesInFileManager'] = array('Enlarge preview images in file manager', 'To 250 pixels width.');
+$GLOBALS['TL_LANG']['tl_settings']['enlargeFontSizeWhenViewportIsMoreThan1920px'] = array('Enlarge font of the backend', 'If the window is wider than 1920 pixels.');
+
 
 $GLOBALS['TL_LANG']['tl_settings']['readMoreLabelDe'] = array('"Read more"-Link - German label', '');
 $GLOBALS['TL_LANG']['tl_settings']['readMoreLabelEn'] = array('"Read more"-Link - English label', '');
@@ -25,8 +29,3 @@ $GLOBALS['TL_LANG']['tl_settings']['nextLabelDe'] = array('"Forward"-Link - Germ
 
 $GLOBALS['TL_LANG']['tl_settings']['previousLabelEn'] = array('Back"-Link - English label', '');
 $GLOBALS['TL_LANG']['tl_settings']['nextLabelEn'] = array('"Forward"-Link - English label', '');
-
-$GLOBALS['TL_LANG']['tl_settings']['firstLabelEn'] = array('Pagination - "first"-link - English label', '');
-$GLOBALS['TL_LANG']['tl_settings']['lastLabelEn'] = array('Pagination - "last"-link - English label', '');
-
-$GLOBALS['TL_LANG']['tl_settings']['newsOverviewEn'] = array('"Back to the news overview"-link - English label', '');
