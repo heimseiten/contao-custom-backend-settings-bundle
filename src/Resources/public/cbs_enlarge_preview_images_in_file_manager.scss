@@ -4,3 +4,7 @@ body #container img.preview-image {
     width: 250px;
     object-fit: contain; 
 }
+.tl_listing.tl_file_manager ul.level_1 > li > .tl_left { 
+    display: block;
+    .preview-image { object-position: left; }
+}
