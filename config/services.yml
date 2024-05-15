@@ -1,0 +1,7 @@
+services:
+    Heimseiten\ContaoCustomBackendSettingsBundle\EventListener\ParseTemplateListener:
+        arguments:
+            - '@security.helper'
+            - '@contao.framework'
+        tags:
+            - { name: contao.hook, hook: parseTemplate }

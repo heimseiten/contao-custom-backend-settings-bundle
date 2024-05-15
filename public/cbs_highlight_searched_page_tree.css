@@ -1,0 +1,10 @@
+.tl_search .tl_text.active { 
+    animation: pulsate_scale 2s ease-in-out; 
+    animation-iteration-count: infinite; 
+    background: #f3f3f5; 
+}
+@keyframes pulsate_scale { 
+    0% {  background: #f3f3f5; } 
+    50% { background: #f47c00; } 
+    100% {  background: #f3f3f5; } 
+}
