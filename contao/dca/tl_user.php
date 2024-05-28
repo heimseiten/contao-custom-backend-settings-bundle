@@ -15,6 +15,7 @@ PaletteManipulator::create()
     ->addField('limitBackendWidth', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('enlargePreviewImagesInFileManager', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('enlargeFontSizeWhenViewportIsMoreThan1920px', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
+    ->addField('disableLinksInPageTreeToFilterTree', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
         
     ->applyToPalette('default', 'tl_user')
     ->applyToPalette('login', 'tl_user')
@@ -82,6 +83,13 @@ $GLOBALS['TL_DCA']['tl_user']['fields']['enlargeTableFields'] = [
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['disableButtonAfterClick'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['disableButtonAfterClick'],
+    'inputType' => 'checkbox', 
+    'eval'      => array('tl_class' => 'w50'),
+    'sql'       => "char(1) NOT NULL default ''"
+];
+
+$GLOBALS['TL_DCA']['tl_user']['fields']['disableLinksInPageTreeToFilterTree'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_user']['disableLinksInPageTreeToFilterTree'],
     'inputType' => 'checkbox', 
     'eval'      => array('tl_class' => 'w50'),
     'sql'       => "char(1) NOT NULL default ''"
