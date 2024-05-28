@@ -73,6 +73,10 @@ final class ParseTemplateListener
             $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_enlarge_font_size_when_viewport_is_more_than_1920px.css'), null, null);
         }
 
+        if (true === (bool) $user->disableLinksInPageTreeToFilterTree) {
+            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_disable_links_in_page_tree_to_filter_tree.css'), null, null);
+        }
+
         if (true === (bool) $user->disableButtonAfterClick) {
             $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_disable_button_after_click.css'), null, null);
             $template->stylesheets .= $templateAdapter->generateScriptTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_disable_button_after_click.js'), null, null);
