@@ -15,3 +15,4 @@ $GLOBALS['TL_LANG']['tl_user']['memberFieldsNotMandatory'] = array('Vorname, Nac
 $GLOBALS['TL_LANG']['tl_user']['limitBackendWidth'] = array('Breite des Backends begrenzen', 'Begrenzt die Breite des Beckends auf 1920 Pixel.');
 $GLOBALS['TL_LANG']['tl_user']['enlargePreviewImagesInFileManager'] = array('Vorschaubilder in der Dateiverwaltung vergrößern', 'Auf 250 Pixel Breite.');
 $GLOBALS['TL_LANG']['tl_user']['enlargeFontSizeWhenViewportIsMoreThan1920px'] = array('Schrift des Backends vergrößern', 'Wenn das Fenster breiter als 1920 Pixel ist.');
+$GLOBALS['TL_LANG']['tl_user']['disableLinksInPageTreeToFilterTree'] = array('Links zum Filtern im Seitenbaum deaktivieren', 'Deaktiviert die Klickbarkeit der einzelnen Seitennamen um den Seitenbaum zu filtern.');
