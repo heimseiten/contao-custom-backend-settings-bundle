@@ -1,0 +1,3 @@
+.tl_listing .tl_left a:last-child {
+    pointer-events: none;
+}
