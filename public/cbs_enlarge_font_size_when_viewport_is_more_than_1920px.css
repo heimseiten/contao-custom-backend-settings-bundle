@@ -1,3 +1,4 @@
 @media(min-width:1921px){
-    html { zoom: 1.6; }
+    html { zoom: 1.5; }
+    #simple-modal { zoom: calc(1 / 1.5); }
 }
