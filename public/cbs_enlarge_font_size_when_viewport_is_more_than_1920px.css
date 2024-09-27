@@ -1,4 +1,5 @@
 @media(min-width:1921px){
     html { zoom: 1.5; }
     #simple-modal { zoom: calc(1 / 1.5); }
+    #tl_files .tl_formbody_edit .tl_tbox .widget .tl_edit_preview { zoom: calc(1 / 1.5); }
 }
