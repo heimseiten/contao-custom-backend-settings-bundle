@@ -1,3 +1,4 @@
+.widget-group:has(#ctrl_cssID) .widget { width: 100%; --widget-cols: 12; }
 .widget:has(#ctrl_cssID) { width: calc( 100% - 30px ); }
 .widget:has(#ctrl_cssID) #ctrl_cssID_0 { width: 24.5%; }
 .widget:has(#ctrl_cssID) #ctrl_cssID_1 { width: 74.5%; }
