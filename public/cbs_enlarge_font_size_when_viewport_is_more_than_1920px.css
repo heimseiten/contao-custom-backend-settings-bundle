@@ -127,4 +127,10 @@
         /* original width: 16px; */
         width: calc( 16/16 * 1rem);
     }
+    .tl_submit {
+        /* original height: 30px; */
+        height: calc( 30/16 * 1rem);
+        /* original padding: 7px 12px; */
+        padding: calc( 7/16 * 1rem) calc( 12/16 * 1rem);
+    }
 }
