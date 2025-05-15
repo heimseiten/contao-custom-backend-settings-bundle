@@ -93,6 +93,10 @@
         margin-left: auto; 
         margin-right: auto; 
     }
+    .tl_tree_xtnd .tl_file .tl_left img {
+        width: padding: calc( 18/16 * 1rem);
+        height: auto;
+    }
     .choices__list--single .choices__item {
         /* original padding: 7px 0; */
         padding: calc( 7/16 * 1rem) 0;
