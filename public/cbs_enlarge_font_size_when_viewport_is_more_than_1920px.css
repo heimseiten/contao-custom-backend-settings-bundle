@@ -60,6 +60,9 @@
         /* original padding: 5px 33px 5px 37px; */
         padding: calc( 5/16 * 1rem) calc( 33/16 * 1rem) calc( 5/16 * 1rem) calc( 37/16 * 1rem);
     }
+    #tl_navigation .menu_level_1>li.current>a {
+        padding-left: calc( 33/16 * 1rem);
+    }
     /******************************************************** Sonstiges */
     .tl_tip {
         /* original height: 15px; */
