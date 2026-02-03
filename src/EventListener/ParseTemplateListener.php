@@ -72,11 +72,6 @@ final class ParseTemplateListener
         if (true === (bool) $user->loadBackendSCSS) {
             $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('files/layout/css/backend.scss'), null, null);
         }
-
-        if (true === (bool) $user->disableButtonAfterClick) {
-            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_disable_button_after_click.css'), null, null);
-            $template->stylesheets .= $templateAdapter->generateScriptTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_disable_button_after_click.js'), null, null);
-        }
         
     }
 }
