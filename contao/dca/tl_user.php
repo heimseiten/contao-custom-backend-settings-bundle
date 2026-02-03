@@ -9,7 +9,6 @@ PaletteManipulator::create()
     ->addField('enlargeCssField', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('enlargeOptionField', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('enlargeTableFields', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
-    ->addField('disableButtonAfterClick', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('highlightFilteredPageTree', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('highlightSearchedPageTree', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('enlargePreviewImagesInFileManager', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
@@ -63,13 +62,6 @@ $GLOBALS['TL_DCA']['tl_user']['fields']['enlargeTableFields'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['enlargeTableFields'],
     'inputType' => 'checkbox', 
     'eval'      => array('tl_class' => 'w50 clr'),
-    'sql'       => "char(1) NOT NULL default ''"
-];
-
-$GLOBALS['TL_DCA']['tl_user']['fields']['disableButtonAfterClick'] = [
-    'label' => &$GLOBALS['TL_LANG']['tl_user']['disableButtonAfterClick'],
-    'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50'),
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
