@@ -10,7 +10,6 @@ $GLOBALS['TL_LANG']['tl_user']['enlargeTableFields'] = array('Felder des Inhalts
 $GLOBALS['TL_LANG']['tl_user']['copiedPageOrArticleWithoutLabelCopy'] = array('Kopieren ohne "(Kopie)" anzuhängen', 'beim Kopieren von Seiten oder Artikeln nicht "(Kopie)" an den Namen hängen');
 $GLOBALS['TL_LANG']['tl_user']['copyEventsWithAllDetails'] = array('echtes Kopieren von Events', 'Events mit allen Details, wie bspw. Datum, Veröffentlichungsstatus usw., kopieren');
 $GLOBALS['TL_LANG']['tl_user']['copyNewsWithAllDetails'] = array('echtes Kopieren von News', 'Nachrichten mit allen Details, wie bspw. Datum, Veröffentlichungsstatus usw., kopieren');
-$GLOBALS['TL_LANG']['tl_user']['disableButtonAfterClick'] = array('Schaltflächen nach dem Klicken ausblenden', '"Speichern", "Speichern und schließen", usw. werden nach einem Klick ausgeblendet.');
 $GLOBALS['TL_LANG']['tl_user']['memberFieldsNotMandatory'] = array('Vorname, Nachname & Land nicht Pflichtfelder', 'Vorname, Nachname und Land in den Mitgliederdaten nicht verpflichtent');
 $GLOBALS['TL_LANG']['tl_user']['enlargePreviewImagesInFileManager'] = array('Vorschaubilder in der Dateiverwaltung vergrößern', 'Auf 250 Pixel Breite.');
 $GLOBALS['TL_LANG']['tl_user']['disableLinksInPageTreeToFilterTree'] = array('Links zum Filtern im Seitenbaum und in Dateien deaktivieren', 'Deaktiviert die Klickbarkeit der einzelnen Seitennamen um den Seitenbaum zu filtern.');
