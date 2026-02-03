@@ -12,9 +12,7 @@ PaletteManipulator::create()
     ->addField('disableButtonAfterClick', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('highlightFilteredPageTree', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('highlightSearchedPageTree', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
-    ->addField('limitBackendWidth', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('enlargePreviewImagesInFileManager', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
-    ->addField('enlargeFontSizeWhenViewportIsMoreThan1920px', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('disableLinksInPageTreeToFilterTree', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('loadBackendSCSS', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
         
@@ -40,22 +38,8 @@ $GLOBALS['TL_DCA']['tl_user']['fields']['highlightSearchedPageTree'] = [
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
-$GLOBALS['TL_DCA']['tl_user']['fields']['limitBackendWidth'] = [
-    'label' => &$GLOBALS['TL_LANG']['tl_user']['limitBackendWidth'],
-    'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50'),
-    'sql'       => "char(1) NOT NULL default ''"
-];
-
 $GLOBALS['TL_DCA']['tl_user']['fields']['enlargePreviewImagesInFileManager'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['enlargePreviewImagesInFileManager'],
-    'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50'),
-    'sql'       => "char(1) NOT NULL default ''"
-];
-
-$GLOBALS['TL_DCA']['tl_user']['fields']['enlargeFontSizeWhenViewportIsMoreThan1920px'] = [
-    'label' => &$GLOBALS['TL_LANG']['tl_user']['enlargeFontSizeWhenViewportIsMoreThan1920px'],
     'inputType' => 'checkbox', 
     'eval'      => array('tl_class' => 'w50'),
     'sql'       => "char(1) NOT NULL default ''"
