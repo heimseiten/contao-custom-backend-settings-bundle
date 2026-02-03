@@ -13,4 +13,4 @@ $GLOBALS['TL_LANG']['tl_user']['copyNewsWithAllDetails'] = array('echtes Kopiere
 $GLOBALS['TL_LANG']['tl_user']['memberFieldsNotMandatory'] = array('Vorname, Nachname & Land nicht Pflichtfelder', 'Vorname, Nachname und Land in den Mitgliederdaten nicht verpflichtent');
 $GLOBALS['TL_LANG']['tl_user']['enlargePreviewImagesInFileManager'] = array('Vorschaubilder in der Dateiverwaltung vergrößern', 'Auf 250 Pixel Breite.');
 $GLOBALS['TL_LANG']['tl_user']['disableLinksInPageTreeToFilterTree'] = array('Links zum Filtern im Seitenbaum und in Dateien deaktivieren', 'Deaktiviert die Klickbarkeit der einzelnen Seitennamen um den Seitenbaum zu filtern.');
-$GLOBALS['TL_LANG']['tl_user']['loadBackendSCSS'] = array('eigene SCSS Datei für das Backend laden', 'Lädt die Datei backend.scss aus dem Verzeichnis /files/layout/css/.');
+$GLOBALS['TL_LANG']['tl_user']['loadBackendSCSS'] = array('eigene SCSS Datei für das Backend laden', 'Lädt die Datei backend.css aus dem Verzeichnis /files/layout/css/.');
