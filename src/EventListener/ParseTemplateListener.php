@@ -70,7 +70,7 @@ final class ParseTemplateListener
         }
 
         if (true === (bool) $user->loadBackendSCSS) {
-            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('files/layout/css/backend.scss'), null, null);
+            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('files/layout/css/backend.css'), null, null);
         }
         
     }
