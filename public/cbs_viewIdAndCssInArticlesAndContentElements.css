@@ -1,0 +1,42 @@
+.cte_type:has(.cssClass span) { padding: 4px 10px; }
+.tl_left, .cte_type {
+    & > div {
+        width: stretch;
+        max-width: fit-content;
+    }
+    .label-info { display: none; }
+    & > span {
+        color: var(--text);
+        line-height: 1;
+        width: 100%;
+        display: flex;
+        code {
+            font-size: 11px;
+            font-family: var(--font-family);
+            align-content: center;
+            &.cssClass { margin-left: auto; }
+            span {
+                display: inline-block;
+                border: 1px solid var(--content-border);
+                border-radius: 100px;
+                margin-left: 1px;
+                background: var(--panel-bg);
+                padding: 1px 7px;
+                .cssID & {
+                    border: 1px solid #df7b01;
+                    color: var(--contao, #f47c00);
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    html[data-color-scheme=light] & {
+                        background: var(--body-bg);
+                    }
+                }
+                .cte_type & { 
+                    background: var(--content-bg);
+                    margin-top: 2px;
+                    margin-bottom: 2px;
+                }
+            }
+        }
+    }
+}
