@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-        if (document.querySelector("#ctrl_title")) {
-            document.querySelector("#ctrl_title").focus()
+        if (document.querySelector("#ctrl_type")) {
+            document.querySelector("#ctrl_type").focus()
         }
         var btn = document.querySelector('button:has(img[alt="Oben einfügen"])')
         if (btn) {
