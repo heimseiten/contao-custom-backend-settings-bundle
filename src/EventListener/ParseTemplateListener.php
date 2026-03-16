@@ -68,6 +68,10 @@ final class ParseTemplateListener
         if (true === (bool) $user->disableLinksInPageTreeToFilterTree) {
             $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_disable_links_in_page_tree_to_filter_tree.css'), null, null);
         }
+        
+        if (true === (bool) $user->viewIdAndCssInArticlesAndContentElements) {
+            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_viewIdAndCssInArticlesAndContentElements.css'), null, null);
+        }
 
         if (true === (bool) $user->loadBackendSCSS) {
             $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('files/layout/css/backend.css'), null, null);
