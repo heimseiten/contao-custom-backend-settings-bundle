@@ -17,6 +17,24 @@
         padding: 8px 10px;
     }
 }
+body:has(:not(#messages)) {
+    background: #1b1d21;
+}
+#main > .content:has(:not(.content-inner)) {
+    --content-bg: #121416;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    .tl_header, .tl_content {
+        border-radius: 0.375rem;
+        overflow: hidden;
+    }
+    .tl_panel, .tl_version_panel {
+        background: var(--content-bg);
+    }
+    input, input.tl_text, select, textarea, .chzn-container-single .chzn-single {
+        border-radius: 0.375rem;
+    }
+}
 /* Contao 5.3 - End */
 .tl_left, .cte_type {
     & > div {
