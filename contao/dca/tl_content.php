@@ -18,8 +18,9 @@ use Contao\BackendUser;
 
 $GLOBALS['TL_DCA']['tl_content']['list']['sorting']['child_record_callback'] = static function (array $row): string {
     $labelResult = (new tl_content())->addCteType($row);
+    $isNestedStructure = is_array($labelResult);
 
-    if (is_array($labelResult)) {
+    if ($isNestedStructure) {
         [$type, $preview, $key] = $labelResult;
         $dragHandle = '<button type="button" class="drag-handle" data-action="keydown->contao--sortable#move">' . Image::getHtml('drag.svg') . '</button>';
         $label = '<div class="cte_type draggable ' . $key . '">' . $dragHandle . '<div>' . $type . '</div></div>';
@@ -51,12 +52,26 @@ $GLOBALS['TL_DCA']['tl_content']['list']['sorting']['child_record_callback'] = s
     ]);
 
     if ($parts !== []) {
-        $label = preg_replace(
-            '/(<div class="cte_type [^"]*">)(.*?)(<\/div>)/s',
-            '$1$2$3<span class="cssIdClass">' . implode(' ', $parts) . '</span>',
-            $label,
-            1
-        ) ?? $label;
+        $cssIdSpan = '<span class="cssIdClass">' . implode(' ', $parts) . '</span>';
+        if ($isNestedStructure) {
+            // Contao 5.7+: <div class="cte_type draggable X"><button/><div>type</div></div>
+            // → inject span after inner </div>, before outer </div>
+            $label = preg_replace(
+                '/(<div class="cte_type [^"]*">)(.*?(<\/div>))(<\/div>)/s',
+                '$1$2' . $cssIdSpan . '$4',
+                $label,
+                1
+            ) ?? $label;
+        } else {
+            // Contao 5.3: <div class="cte_type X">type</div>
+            // → inject span inside div, before </div>
+            $label = preg_replace(
+                '/(<div class="cte_type [^"]*">)(.*?)(<\/div>)/s',
+                '$1$2' . $cssIdSpan . '$3',
+                $label,
+                1
+            ) ?? $label;
+        }
     }
 
     return $label;
