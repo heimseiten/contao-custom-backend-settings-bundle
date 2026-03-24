@@ -21,7 +21,9 @@ body:has(:not(#messages)) {
     background: #1b1d21;
 }
 #main > .content:has(:not(.content-inner)) {
-    --content-bg: #121416;
+    html[data-color-scheme=dark] & {
+        --content-bg: #121416;
+    }
     border-radius: 0.75rem;
     overflow: hidden;
     .tl_header, .tl_content {
