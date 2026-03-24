@@ -1,10 +1,21 @@
 .cte_type:has(.cssClass span) { padding: 4px 10px; }
 /* Contao 5.3 - Start */
-#main > .content > div:not(.content-inner) .tl_left {
-    align-items: center;
-    display: flex;
-    gap: 4px;
-    padding-left: calc(var(--level) * 16px);
+#main > .content > div:not(.content-inner) {
+    .tl_left {
+        align-items: center;
+        display: flex;
+        gap: 4px;
+        padding-left: calc(var(--level) * 16px);
+    }
+    .cte_type {
+        align-items: center;
+        display: flex;
+        font-size: .815rem;
+        gap: 3px;
+        margin-bottom: 0;
+        order: 1;
+        padding: 8px 10px;
+    }
 }
 /* Contao 5.3 - End */
 .tl_left, .cte_type {
