@@ -1,4 +1,12 @@
 .cte_type:has(.cssClass span) { padding: 4px 10px; }
+/* Contao 5.3 - Start */
+#main > .content > div:not(.content-inner) .tl_left {
+    align-items: center;
+    display: flex;
+    gap: 4px;
+    padding-left: calc(var(--level) * 16px);
+}
+/* Contao 5.3 - End */
 .tl_left, .cte_type {
     & > div {
         width: stretch;
