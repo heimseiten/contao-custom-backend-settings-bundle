@@ -1,16 +1,13 @@
 <?php
 
-if ( Contao\Config::get('publishArticleOnCreate') ) {
-    $GLOBALS['TL_DCA']['tl_article']['fields']['published']['default'] = true;
-}
-
-
-// Show CSS ID and CSS class in article backend labels
-
 declare(strict_types=1);
 
 use Contao\StringUtil;
 use Contao\BackendUser;
+
+if ( Contao\Config::get('publishArticleOnCreate') ) {
+    $GLOBALS['TL_DCA']['tl_article']['fields']['published']['default'] = true;
+}
 
 $GLOBALS['TL_DCA']['tl_article']['list']['label']['label_callback'] = static function (array $row, string $label): string {
     // Call original core callback
