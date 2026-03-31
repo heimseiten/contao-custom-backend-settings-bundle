@@ -1,5 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
+use Contao\Image;
+use Contao\StringUtil;
+use Contao\BackendUser;
+
 if ( Contao\Config::get('addParagraphOptionToHeadlineField') ) {
     array_push( $GLOBALS['TL_DCA']['tl_content']['fields']['headline']['options'], 'p' );
 }
@@ -7,14 +13,6 @@ if ( Contao\Config::get('addParagraphOptionToHeadlineField') ) {
 if ( Contao\Config::get('addStrongOptionToHeadlineField') ) {
     array_push( $GLOBALS['TL_DCA']['tl_content']['fields']['headline']['options'], 'strong' );
 }
-
-
-// Show CSS ID, CSS class and additional info in backend labels for all content elements
-declare(strict_types=1);
-
-use Contao\Image;
-use Contao\StringUtil;
-use Contao\BackendUser;
 
 $GLOBALS['TL_DCA']['tl_content']['list']['sorting']['child_record_callback'] = static function (array $row): string {
     $labelResult = (new tl_content())->addCteType($row);
