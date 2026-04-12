@@ -4,12 +4,8 @@ declare(strict_types=1);
 
 namespace Heimseiten\ContaoCustomBackendSettingsBundle;
 
-use Symfony\Component\HttpKernel\Bundle\Bundle;
+use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
-class HeimseitenContaoCustomBackendSettingsBundle extends Bundle
-{	
-	public function getPath(): string
-    {
-        return \dirname(__DIR__);
-    }
+class HeimSeitenContaoCustomBackendSettingsBundle extends AbstractBundle
+{
 }
