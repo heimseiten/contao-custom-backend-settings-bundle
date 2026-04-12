@@ -1,0 +1,46 @@
+/* Vorschau der Elementgruppe - Start */
+.cte_preview > div[class^='Spalten'], .cte_preview > div[class*=' Spalten'] {
+	& > * {
+		background: var(--content-bg);
+		border: 1px solid var(--border);
+		border-radius: var(--border-radius);
+		padding: 10px;
+	}
+}
+
+.tl_content:has(div[class^='Spalten']), .tl_content:has(div[class*=' Spalten']) {
+	.cte_preview { background: var(--panel-bg); }
+	[data-contao--limit-height-target][style*=max-height] .limit_toggler {
+		background: linear-gradient(transparent,var(--panel-bg) 60%);
+	}
+}
+/* Vorschau der Elementgruppe - Ende */
+
+/* Operations-Icons ausblenden um Platz zu sparen - Start */
+div[class^='Spalten'], div[class*=' Spalten'] {
+	& > ul .tl_content_right .operations > ul > li {
+		display: none;
+		&.operations-menu-container { display: block; }
+	}
+}
+/* Operations-Icons ausblenden um Platz zu sparen - Ende */
+
+/* Abstand oben korrigieren - Start */
+div[class^='Spalten'], div[class*=' Spalten'] {
+	.tl_content { margin-top: 0; }
+}
+/* Abstand oben korrigieren - Ende */
+
+.Spalten2 > ul, .cte_preview .Spalten2,
+.Spalten3 > ul, .cte_preview .Spalten3,
+.Spalten4 > ul, .cte_preview .Spalten4,
+.Spalten5 > ul, .cte_preview .Spalten5,
+.Spalten6 > ul, .cte_preview .Spalten6 { 
+	display: grid;
+	gap: 20px;
+}
+.Spalten2 > ul, .cte_preview .Spalten2 { grid-template-columns: repeat(2, 1fr); }
+.Spalten3 > ul, .cte_preview .Spalten3 { grid-template-columns: repeat(3, 1fr); }
+.Spalten4 > ul, .cte_preview .Spalten4 { grid-template-columns: repeat(4, 1fr); }
+.Spalten5 > ul, .cte_preview .Spalten5 { grid-template-columns: repeat(5, 1fr); }
+.Spalten6 > ul, .cte_preview .Spalten6 { grid-template-columns: repeat(6, 1fr); }
