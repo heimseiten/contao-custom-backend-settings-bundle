@@ -1,0 +1,7 @@
+{% extends '@Contao/backend/data_container/table/view/_record_listing.html.twig' %}
+
+{% set group_css_class = insert_tag('element_group_cssclass::' ~ pid) %}
+{% set listing_attributes = attrs()
+    .addClass(group_css_class, group_css_class)
+    .mergeWith(listing_attributes|default)
+%}
