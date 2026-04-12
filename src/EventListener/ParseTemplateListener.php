@@ -76,6 +76,8 @@ final class ParseTemplateListener
         if (true === (bool) $user->loadBackendSCSS) {
             $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('files/layout/css/backend.css'), null, null);
         }
+
+        $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/Spalten.css'), null, null);
         
     }
 }
