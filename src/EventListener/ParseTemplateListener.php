@@ -7,11 +7,12 @@ namespace Heimseiten\ContaoCustomBackendSettingsBundle\EventListener;
 use Contao\BackendTemplate;
 use Contao\BackendUser;
 use Contao\Controller;
+use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
 use Contao\CoreBundle\Framework\ContaoFramework;
 use Contao\Template;
 use Symfony\Bundle\SecurityBundle\Security;
 
-#[AsHook('ParseTemplateListener')]
+#[AsHook('parseTemplate')]
 final class ParseTemplateListener
 {
     public function __construct(
