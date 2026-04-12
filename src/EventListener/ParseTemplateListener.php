@@ -11,7 +11,7 @@ use Contao\CoreBundle\Framework\ContaoFramework;
 use Contao\Template;
 use Symfony\Bundle\SecurityBundle\Security;
 
-#[AsHook('parseTemplate')]
+#[AsHook('ParseTemplateListener')]
 final class ParseTemplateListener
 {
     public function __construct(
