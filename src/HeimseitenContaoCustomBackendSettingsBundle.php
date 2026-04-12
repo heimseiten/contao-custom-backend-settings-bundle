@@ -6,6 +6,6 @@ namespace Heimseiten\ContaoCustomBackendSettingsBundle;
 
 use Symfony\Component\HttpKernel\Bundle\AbstractBundle;
 
-class HeimSeitenContaoCustomBackendSettingsBundle extends AbstractBundle
+class HeimseitenContaoCustomBackendSettingsBundle extends AbstractBundle
 {
 }
