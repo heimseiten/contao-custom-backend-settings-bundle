@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace App\InsertTag;
+namespace Heimseiten\ContaoCustomBackendSettingsBundle\InsertTag;
 
 use Contao\ContentModel;
 use Contao\CoreBundle\DependencyInjection\Attribute\AsInsertTag;
