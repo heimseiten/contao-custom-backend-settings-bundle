@@ -78,7 +78,7 @@ body:not(:has(#messages)) {
 }
 .cte_type:has(.cssClass span) { padding: 4px 10px; }
 /* Contao 5.3 - End */
-.tl_left, .cte_type {
+.tl_left, .cte_type, .tl_header .tl_content_right {
     & > div {
         width: stretch;
         max-width: fit-content;
@@ -89,6 +89,7 @@ body:not(:has(#messages)) {
         line-height: 1;
         width: 100%;
         display: flex;
+        .tl_header & { margin-right: 10px; }
         code {
             font-size: 11px;
             font-family: var(--font-family);
@@ -110,7 +111,7 @@ body:not(:has(#messages)) {
                         background: var(--body-bg);
                     }
                 }
-                .cte_type & { 
+                .cte_type &, .tl_header & { 
                     background: var(--content-bg);
                     margin-top: 2px;
                     margin-bottom: 2px;
