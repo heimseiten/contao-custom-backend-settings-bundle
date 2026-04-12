@@ -1,7 +1,7 @@
 services:
-    Heimseiten\ContaoCustomBackendSettingsBundle\EventListener\ParseTemplateListener:
-        arguments:
-            - '@security.helper'
-            - '@contao.framework'
-        tags:
-            - { name: contao.hook, hook: parseTemplate }
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    Heimseiten\ContaoCustomBackendSettingsBundle\:
+        resource: '../src/'
