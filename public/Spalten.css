@@ -45,3 +45,14 @@ div[class^='Spalten'], div[class*=' Spalten'] {
 .Spalten4 > ul, .cte_preview .Spalten4 { grid-template-columns: repeat(4, 1fr); }
 .Spalten5 > ul, .cte_preview .Spalten5 { grid-template-columns: repeat(5, 1fr); }
 .Spalten6 > ul, .cte_preview .Spalten6 { grid-template-columns: repeat(6, 1fr); }
+
+/* Backend Swiper Vorschau - Start */
+.cte_preview .content-custom-swiper .swiper-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+	img:not(.backend-icon) {
+		max-width: 100%;
+	}
+}
+/* Backend Swiper Vorschau - Ende */
