@@ -1,5 +1,5 @@
 /* Vorschau der Elementgruppe - Start */
-.cte_preview > div[class^='Spalten'], .cte_preview > div[class*=' Spalten'] {
+.cte_preview > :is(.Spalten2, .Spalten3, .Spalten4, .Spalten5, .Spalten6) {
 	& > * {
 		background: var(--content-bg);
 		border: 1px solid var(--border);
@@ -8,7 +8,7 @@
 	}
 }
 
-.tl_content:has(div[class^='Spalten']), .tl_content:has(div[class*=' Spalten']) {
+.tl_content:has(.Spalten2, .Spalten3, .Spalten4, .Spalten5, .Spalten6) {
 	.cte_preview { background: var(--panel-bg); }
 	[data-contao--limit-height-target][style*=max-height] .limit_toggler {
 		background: linear-gradient(transparent,var(--panel-bg) 60%);
@@ -17,7 +17,7 @@
 /* Vorschau der Elementgruppe - Ende */
 
 /* Operations-Icons ausblenden um Platz zu sparen - Start */
-div[class^='Spalten'], div[class*=' Spalten'] {
+.Spalten2, .Spalten3, .Spalten4, .Spalten5, .Spalten6 {
 	& > ul .tl_content_right .operations > ul > li {
 		display: none;
 		&:first-child, &:has([data-label="Verstecken"]), &.operations-menu-container { display: block; }
@@ -26,12 +26,12 @@ div[class^='Spalten'], div[class*=' Spalten'] {
 /* Operations-Icons ausblenden um Platz zu sparen - Ende */
 
 /* Abstand oben korrigieren - Start */
-div[class^='Spalten'], div[class*=' Spalten'] {
+.Spalten2, .Spalten3, .Spalten4, .Spalten5, .Spalten6 {
 	.tl_content { margin-top: 0; }
 }
 /* Abstand oben korrigieren - Ende */
 
-.cte_preview :is(div[class^='Spalten'], div[class*=' Spalten']) { gap: 10px; }
+.cte_preview :is(.Spalten2, .Spalten3, .Spalten4, .Spalten5, .Spalten6) { gap: 10px; }
 .Spalten2 > ul, .cte_preview .Spalten2,
 .Spalten3 > ul, .cte_preview .Spalten3,
 .Spalten4 > ul, .cte_preview .Spalten4,
