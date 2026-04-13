@@ -20,7 +20,7 @@
 div[class^='Spalten'], div[class*=' Spalten'] {
 	& > ul .tl_content_right .operations > ul > li {
 		display: none;
-		&:first-child, &.operations-menu-container { display: block; }
+		&:first-child, &:has([data-label="Verstecken"]), &.operations-menu-container { display: block; }
 	}
 }
 /* Operations-Icons ausblenden um Platz zu sparen - Ende */
