@@ -31,13 +31,14 @@ div[class^='Spalten'], div[class*=' Spalten'] {
 }
 /* Abstand oben korrigieren - Ende */
 
+.cte_preview :is(div[class^='Spalten'], div[class*=' Spalten']) { gap: 10px; }
 .Spalten2 > ul, .cte_preview .Spalten2,
 .Spalten3 > ul, .cte_preview .Spalten3,
 .Spalten4 > ul, .cte_preview .Spalten4,
 .Spalten5 > ul, .cte_preview .Spalten5,
 .Spalten6 > ul, .cte_preview .Spalten6 { 
 	display: grid;
-	gap: 10px;
+	gap: 15px;
 }
 .Spalten2 > ul, .cte_preview .Spalten2 { grid-template-columns: repeat(2, 1fr); }
 .Spalten3 > ul, .cte_preview .Spalten3 { grid-template-columns: repeat(3, 1fr); }
