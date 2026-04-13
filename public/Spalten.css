@@ -51,8 +51,8 @@ div[class^='Spalten'], div[class*=' Spalten'] {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
-	img:not(.backend-icon) {
-		max-width: 100%;
-	}
+}
+.cte_preview img:not(.backend-icon) {
+	max-width: 100%;
 }
 /* Backend Swiper Vorschau - Ende */
