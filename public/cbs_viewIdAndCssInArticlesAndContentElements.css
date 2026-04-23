@@ -1,16 +1,13 @@
 /* Contao 5.3 - Start */
 body:not(:has(#messages)) {
-    --backend-width: 1440px;
     background: #1b1d21;
     #header {
         max-width: 100%;
         & > .inner {
-            max-width: var(--backend-width, none);
             margin: auto;
         }
     }
     #container {
-        max-width: var(--backend-width, none);
         margin: auto;
         #tl_navigation .menu_level_1 a:hover, #tl_navigation .menu_level_1 li.current > a {
             border-radius: 0.375rem;
