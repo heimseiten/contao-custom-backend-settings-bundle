@@ -83,7 +83,6 @@ body:not(:has(#messages)) {
         width: stretch;
         max-width: fit-content;
     }
-    .label-info { display: none; }
     & > span.cssIdClass {
         color: var(--text);
         line-height: 1;
