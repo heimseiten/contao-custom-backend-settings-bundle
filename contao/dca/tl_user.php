@@ -15,6 +15,7 @@ PaletteManipulator::create()
     ->addField('disableLinksInPageTreeToFilterTree', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('loadBackendSCSS', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('viewIdAndCssInArticlesAndContentElements', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
+    ->addField('dontViewLayoutSectionsInArticleList', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
         
     ->applyToPalette('default', 'tl_user')
     ->applyToPalette('login', 'tl_user')
