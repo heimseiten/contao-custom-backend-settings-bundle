@@ -15,4 +15,4 @@ $GLOBALS['TL_LANG']['tl_user']['enlargePreviewImagesInFileManager'] = array('Enl
 $GLOBALS['TL_LANG']['tl_user']['disableLinksInPageTreeToFilterTree'] = array('Deactivate links to filter in the page tree and in files', 'Deactivates the clickability of the individual page names to filter the page tree.');
 $GLOBALS['TL_LANG']['tl_user']['loadBackendSCSS'] = array('load your own SCSS file for the backend', 'Loads the file backend.css from the directory /files/layout/css/.');
 $GLOBALS['TL_LANG']['tl_user']['viewIdAndCssInArticlesAndContentElements'] = array('Show ID and CSS in articles and content elements', 'Shows the ID and the CSS classes in the backend labels of the articles and content elements.');
-$GLOBALS['TL_LANG']['tl_user']['cbs_dontViewLayoutSectionsInArticleList.css'] = array('Do not display layout sections in the article list', '');
+$GLOBALS['TL_LANG']['tl_user']['dontViewLayoutSectionsInArticleList'] = array('Do not display layout columns in the article list', 'Hides the layout columns in the article list.');
