@@ -88,7 +88,6 @@ $GLOBALS['TL_DCA']['tl_user']['fields']['viewIdAndCssInArticlesAndContentElement
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
-
 $GLOBALS['TL_DCA']['tl_user']['fields']['dontViewLayoutSectionsInArticleList'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['dontViewLayoutSectionsInArticleList'],
     'inputType' => 'checkbox', 
