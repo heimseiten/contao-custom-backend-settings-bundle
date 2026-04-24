@@ -79,6 +79,12 @@ final class ParseTemplateListener
             $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('files/layout/css/backend.css'), null, null);
         }
 
+        $jsonData = json_decode($user->jsonData, true) ?? [];
+
+        if (!empty($jsonData['dontViewLayoutSectionsInArticleList'])) {
+            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_dontViewLayoutSectionsInArticleList.css'), null, null);
+        }
+
         $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/Spalten.css'), null, null);
         
     }
