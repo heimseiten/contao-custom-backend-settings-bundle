@@ -15,7 +15,7 @@ PaletteManipulator::create()
     ->addField('disableLinksInPageTreeToFilterTree', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('loadBackendSCSS', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('viewIdAndCssInArticlesAndContentElements', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
-    ->addField('dontViewLayoutSectionsInArticleList', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
+    ->addField('hideLayoutSectionsInArticleList', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
         
     ->applyToPalette('default', 'tl_user')
     ->applyToPalette('login', 'tl_user')
@@ -88,8 +88,8 @@ $GLOBALS['TL_DCA']['tl_user']['fields']['viewIdAndCssInArticlesAndContentElement
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
-$GLOBALS['TL_DCA']['tl_user']['fields']['dontViewLayoutSectionsInArticleList'] = [
-    'label' => &$GLOBALS['TL_LANG']['tl_user']['dontViewLayoutSectionsInArticleList'],
+$GLOBALS['TL_DCA']['tl_user']['fields']['hideLayoutSectionsInArticleList'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_user']['hideLayoutSectionsInArticleList'],
     'inputType' => 'checkbox', 
     'eval'      => array('tl_class' => 'w50 clr')
 ];
