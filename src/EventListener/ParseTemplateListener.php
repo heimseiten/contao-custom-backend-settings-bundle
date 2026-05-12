@@ -75,18 +75,12 @@ final class ParseTemplateListener
             $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_viewIdAndCssInArticlesAndContentElements.css'), null, null);
         }
 
+        if (true === (bool) $user->hideLayoutSectionsInArticleList) {
+            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_hideLayoutSectionsInArticleList.css'), null, null);
+        }
+        
         if (true === (bool) $user->loadBackendSCSS) {
             $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('files/layout/css/backend.css'), null, null);
-        }
-
-        $userModel = \Contao\UserModel::findById($user->id);
-
-        if (!empty($userModel->hideLayoutSectionsInArticleList)) {
-            $template->stylesheets .= $templateAdapter->generateStyleTag(
-                $controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_hideLayoutSectionsInArticleList.css'),
-                null,
-                null
-            );
         }
 
         $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/Spalten.css'), null, null);
