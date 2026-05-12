@@ -28,64 +28,55 @@ PaletteManipulator::create()
 $GLOBALS['TL_DCA']['tl_user']['fields']['highlightFilteredPageTree'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['highlightFilteredPageTree'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50 m12'),
-    'sql'       => "char(1) NOT NULL default ''"
+    'eval'      => array('tl_class' => 'w50 m12')
 ];
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['highlightSearchedPageTree'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['highlightSearchedPageTree'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50'),
-    'sql'       => "char(1) NOT NULL default ''"
+    'eval'      => array('tl_class' => 'w50')
 ];
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['enlargePreviewImagesInFileManager'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['enlargePreviewImagesInFileManager'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50'),
-    'sql'       => "char(1) NOT NULL default ''"
+    'eval'      => array('tl_class' => 'w50')
 ];
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['enlargeOptionField'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['enlargeOptionField'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50'),
-    'sql'       => "char(1) NOT NULL default ''"
+    'eval'      => array('tl_class' => 'w50')
 ];
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['enlargeCssField'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['enlargeCssField'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50 clr'),
-    'sql'       => "char(1) NOT NULL default ''"
+    'eval'      => array('tl_class' => 'w50 clr')
 ];
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['enlargeTableFields'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['enlargeTableFields'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50 clr'),
-    'sql'       => "char(1) NOT NULL default ''"
+    'eval'      => array('tl_class' => 'w50 clr')
 ];
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['disableLinksInPageTreeToFilterTree'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['disableLinksInPageTreeToFilterTree'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50'),
-    'sql'       => "char(1) NOT NULL default ''"
+    'eval'      => array('tl_class' => 'w50')
 ];
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['loadBackendSCSS'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['loadBackendSCSS'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50'),
-    'sql'       => "char(1) NOT NULL default ''"
+    'eval'      => array('tl_class' => 'w50')
 ];
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['viewIdAndCssInArticlesAndContentElements'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['viewIdAndCssInArticlesAndContentElements'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50 clr'),
-    'sql'       => "char(1) NOT NULL default ''"
+    'eval'      => array('tl_class' => 'w50 clr')
 ];
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['hideLayoutSectionsInArticleList'] = [
