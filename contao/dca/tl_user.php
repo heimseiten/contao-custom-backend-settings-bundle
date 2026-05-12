@@ -56,14 +56,14 @@ $GLOBALS['TL_DCA']['tl_user']['fields']['enlargeOptionField'] = [
 $GLOBALS['TL_DCA']['tl_user']['fields']['enlargeCssField'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['enlargeCssField'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50 clr'),
+    'eval'      => array('tl_class' => 'w50'),
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['enlargeTableFields'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['enlargeTableFields'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50 clr'),
+    'eval'      => array('tl_class' => 'w50'),
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
@@ -84,7 +84,7 @@ $GLOBALS['TL_DCA']['tl_user']['fields']['loadBackendSCSS'] = [
 $GLOBALS['TL_DCA']['tl_user']['fields']['viewIdAndCssInArticlesAndContentElements'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['viewIdAndCssInArticlesAndContentElements'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50 clr'),
+    'eval'      => array('tl_class' => 'w50'),
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
