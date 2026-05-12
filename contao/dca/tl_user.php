@@ -28,7 +28,7 @@ PaletteManipulator::create()
 $GLOBALS['TL_DCA']['tl_user']['fields']['highlightFilteredPageTree'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['highlightFilteredPageTree'],
     'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50 m12'),
+    'eval'      => array('tl_class' => 'w50'),
     'sql'       => "char(1) NOT NULL default ''"
 ];
 
