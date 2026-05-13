@@ -120,3 +120,24 @@ body:not(:has(#messages)) {
         }
     }
 }
+/* site structure */
+.tl_left :is(a, strong) {
+    &:has(.page_css_wrapper) {
+        display: flex;
+        width: 100%;
+        .page_css_wrapper {
+            font-size: 11px;
+            font-family: var(--font-family);
+            align-content: center;  
+            margin-left: auto;
+            span {        
+                display: inline-block;
+                border: 1px solid var(--content-border);
+                border-radius: 100px;
+                margin-left: 1px;
+                background: var(--panel-bg);
+                padding: 1px 7px; 
+            }
+        }
+    }    
+}    
