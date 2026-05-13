@@ -73,6 +73,7 @@ final class ParseTemplateListener
         
         if (true === (bool) $user->viewIdAndCssInArticlesAndContentElements) {
             $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_viewIdAndCssInArticlesAndContentElements.css'), null, null);
+            $template->javascripts .= $templateAdapter->generateScriptTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_pageCssClasses.js'), false, null, null, 'defer' );
         }
 
         if (true === (bool) $user->hideLayoutSectionsInArticleList) {
