@@ -33,11 +33,10 @@ body:not(:has(#messages)) {
             }
         }
         #main > .content {
+            border-radius: 0.75rem;
             html[data-color-scheme=dark] & {
                 --content-bg: #121416;
             }
-            border-radius: 0.75rem;
-            overflow: hidden;
             .tl_folder_top {
                 background: var(--table-header);
             }
@@ -69,6 +68,14 @@ body:not(:has(#messages)) {
                 &.icon-protected {
                     padding-left: 27px;
                 }
+            }
+            .tl_submit_container {
+                overflow: hidden;
+                border-radius: 0 0 .75rem .75rem;
+            }
+            .jump-targets {
+                overflow: hidden;
+                border-radius: .75rem .75rem 0 0;
             }
         }
     }
