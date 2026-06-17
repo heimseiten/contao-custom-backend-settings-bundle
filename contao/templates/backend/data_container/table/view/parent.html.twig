@@ -27,7 +27,7 @@
                 <div class="tl_content_right">
                 
                     {# Hinzufügen von CSS-Klassen - start #}
-                    {% set group_css_class = insert_tag('element_group_cssclass::' ~ pid) %}
+                    {% set group_css_class = element_group_cssclass(pid) %}
                     {% if group_css_class %}
                         <span class="cssIdClass">
                             <code class="cssClass">
