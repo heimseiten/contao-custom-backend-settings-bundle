@@ -14,7 +14,6 @@ PaletteManipulator::create()
     ->addField('enlargePreviewImagesInFileManager', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('disableLinksInPageTreeToFilterTree', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('loadBackendSCSS', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
-    ->addField('viewIdAndCssInArticlesAndContentElements', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('hideLayoutSectionsInArticleList', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
         
     ->applyToPalette('default', 'tl_user')
@@ -71,12 +70,6 @@ $GLOBALS['TL_DCA']['tl_user']['fields']['loadBackendSCSS'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['loadBackendSCSS'],
     'inputType' => 'checkbox', 
     'eval'      => array('tl_class' => 'w50')
-];
-
-$GLOBALS['TL_DCA']['tl_user']['fields']['viewIdAndCssInArticlesAndContentElements'] = [
-    'label' => &$GLOBALS['TL_LANG']['tl_user']['viewIdAndCssInArticlesAndContentElements'],
-    'inputType' => 'checkbox', 
-    'eval'      => array('tl_class' => 'w50 clr')
 ];
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['hideLayoutSectionsInArticleList'] = [

@@ -71,11 +71,6 @@ final class ParseTemplateListener
             $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_disable_links_in_page_tree_to_filter_tree.css'), null, null);
         }
         
-        if (true === (bool) $user->viewIdAndCssInArticlesAndContentElements) {
-            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_viewIdAndCssInArticlesAndContentElements.css'), null, null);
-            $template->javascripts .= $templateAdapter->generateScriptTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_pageCssClasses.js'), false, null, null, 'defer' );
-        }
-
         if (true === (bool) $user->hideLayoutSectionsInArticleList) {
             $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_hideLayoutSectionsInArticleList.css'), null, null);
         }
