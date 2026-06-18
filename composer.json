@@ -1,6 +1,6 @@
 {
     "name": "heimseiten/contao-custom-backend-settings-bundle",
-    "description": "Seite beim Neuerstellen direkt veröffentlichen; beim Kopieren von Seiten oder Artikeln nicht (Kopie) an den Namen hängen; Artikel beim Neuerstellen direkt veröffentlichen; Nachricht beim Neuerstellen direkt veröffentlichen; Event beim Neuerstellen direkt veröffentlichen; gefilterten Seitenbaum hervorheben; durchsuchten Seitenbaum hervorheben; CSS Eingabefeld vergrößern; Nachrichten mit allen Details, wie bspw. Datum, Veröffentlichungsstatus usw., kopieren; Events mit allen Details, wie bspw. Datum, Veröffentlichungsstatus usw., kopieren; Vorname, Nachname und Land in den Mitgliederdaten nicht verpflichtent; HTML in Formularfeldern erlauben",
+    "description": "Seite beim Neuerstellen direkt veröffentlichen; beim Kopieren von Seiten oder Artikeln nicht (Kopie) an den Namen hängen; Artikel beim Neuerstellen direkt veröffentlichen; Nachricht beim Neuerstellen direkt veröffentlichen; Event beim Neuerstellen direkt veröffentlichen; gefilterten Seitenbaum hervorheben; durchsuchten Seitenbaum hervorheben; CSS Eingabefeld vergrößern; Nachrichten mit allen Details, wie bspw. Datum, Veröffentlichungsstatus usw., kopieren; Events mit allen Details, wie bspw. Datum, Veröffentlichungsstatus usw., kopieren; Vorname, Nachname und Land in den Mitgliederdaten nicht verpflichtent; HTML in Formularfeldern erlauben; in einer leeren sortierbaren Liste (z. B. erstes Inhaltselement eines Artikels) das erste Element automatisch einfügen",
     "keywords": [
         "Kopie Label",
         "CSS Feld",
@@ -23,7 +23,7 @@
         "source": "https://github.com/heimseiten/contao-custom-backend-settings-bundle"
     },
     "require": {
-        "contao/core-bundle": "^5.7.5"
+        "contao/core-bundle": "^5.7.7"
     },
     "require-dev": {
         "contao/easy-coding-standard": "^4.0",

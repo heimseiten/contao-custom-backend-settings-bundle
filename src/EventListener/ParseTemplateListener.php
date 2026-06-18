@@ -15,6 +15,8 @@ use Symfony\Bundle\SecurityBundle\Security;
 #[AsHook('parseTemplate')]
 final class ParseTemplateListener
 {
+    private const ASSET_PATH = 'bundles/heimseitencontaocustombackendsettings/';
+
     public function __construct(
         private readonly Security $security,
         private readonly ContaoFramework $contaoFramework,
@@ -44,42 +46,45 @@ final class ParseTemplateListener
         $controllerAdapter = $this->contaoFramework->getAdapter(Controller::class);
 
         if (true === (bool) $user->highlightFilteredPageTree) {
-            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_highlight_filtered_page_tree.css'), null, null);
+            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo(self::ASSET_PATH . 'highlight-filtered-page-tree.css'), null, null);
         }
 
         if (true === (bool) $user->highlightSearchedPageTree) {
-            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_highlight_searched_page_tree.css'), null, null);
+            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo(self::ASSET_PATH . 'highlight-searched-page-tree.css'), null, null);
         }
 
         if (true === (bool) $user->enlargeCssField) {
-            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_enlarge_css_field.css'), null, null);
+            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo(self::ASSET_PATH . 'enlarge-css-field.css'), null, null);
         }
 
         if (true === (bool) $user->enlargeOptionField) {
-            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_enlarge_option_field.css'), null, null);
+            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo(self::ASSET_PATH . 'enlarge-option-field.css'), null, null);
         }
 
         if (true === (bool) $user->enlargeTableFields) {
-            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_enlarge_table_fields.css'), null, null);
+            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo(self::ASSET_PATH . 'enlarge-table-fields.css'), null, null);
         }
 
         if (true === (bool) $user->enlargePreviewImagesInFileManager) {
-            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_enlarge_preview_images_in_file_manager.css'), null, null);
-        }        
+            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo(self::ASSET_PATH . 'enlarge-file-manager-previews.css'), null, null);
+        }
 
         if (true === (bool) $user->disableLinksInPageTreeToFilterTree) {
-            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_disable_links_in_page_tree_to_filter_tree.css'), null, null);
+            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo(self::ASSET_PATH . 'disable-page-tree-filter-links.css'), null, null);
         }
-        
+
         if (true === (bool) $user->hideLayoutSectionsInArticleList) {
-            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/cbs_hideLayoutSectionsInArticleList.css'), null, null);
+            $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo(self::ASSET_PATH . 'hide-layout-sections-in-article-list.css'), null, null);
         }
-        
+
         if (true === (bool) $user->loadBackendSCSS) {
             $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('files/layout/css/backend.css'), null, null);
         }
 
-        $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo('bundles/heimseitencontaocustombackendsettings/Spalten.css'), null, null);
-        
+        if (true === (bool) $user->autoInsertFirstElement) {
+            $template->javascripts .= $templateAdapter->generateScriptTag($controllerAdapter->addStaticUrlTo(self::ASSET_PATH . 'auto-insert-first-element.js'), false, null);
+        }
+
+        $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo(self::ASSET_PATH . 'column-group-preview.css'), null, null);
     }
 }

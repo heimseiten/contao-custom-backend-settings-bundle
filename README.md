@@ -35,6 +35,16 @@ sich sein eigenes Erscheinungsbild ein.
 | Eigene Backend-Datei laden | Lädt `backend.css` aus `/files/layout/css/` ins Backend (eigenes Backend-Styling). |
 | Layout-Spalten in der Artikelliste ausblenden | Blendet die Layout-Spalten in der Artikelliste aus. |
 
+### Verhalten – pro Benutzer
+
+*Benutzer ▸ Benutzer bearbeiten ▸ Legende „Custom Backend Settings (heimseiten.de): Verhalten"*
+
+Ebenfalls **nur für den jeweiligen Backend-Benutzer**.
+
+| Option | Wirkung |
+| --- | --- |
+| Erstes Element automatisch einfügen | Legt man in einer noch **leeren** sortierbaren Liste ein neues Element an (z. B. das erste Inhaltselement eines Artikels), zeigt Contao trotzdem die Positionsauswahl an – obwohl es nur eine mögliche Position gibt. Diese Option überspringt die Abfrage und fügt das Element automatisch ein. Sind bereits Elemente vorhanden, bleibt die Positionsauswahl unangetastet. |
+
 ### Funktionen – global
 
 *System ▸ Einstellungen ▸ Legende „Custom Backend Settings (heimseiten.de): Funktionen"*

@@ -4,8 +4,9 @@ use Contao\DataContainer;
 
 PaletteManipulator::create()
     ->addLegend('CustomBackendSettingsLabels', 'backend_legend', PaletteManipulator::POSITION_AFTER)
+    ->addLegend('CustomBackendSettingsBehaviour', 'backend_legend', PaletteManipulator::POSITION_AFTER)
     ->addLegend('CustomBackendSettingsAppearance', 'backend_legend', PaletteManipulator::POSITION_AFTER)
-  
+
     ->addField('enlargeCssField', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('enlargeOptionField', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('enlargeTableFields', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
@@ -15,7 +16,9 @@ PaletteManipulator::create()
     ->addField('disableLinksInPageTreeToFilterTree', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('loadBackendSCSS', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
     ->addField('hideLayoutSectionsInArticleList', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
-        
+
+    ->addField('autoInsertFirstElement', 'CustomBackendSettingsBehaviour', PaletteManipulator::POSITION_APPEND)
+
     ->applyToPalette('default', 'tl_user')
     ->applyToPalette('login', 'tl_user')
     ->applyToPalette('admin', 'tl_user')
@@ -26,54 +29,60 @@ PaletteManipulator::create()
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['highlightFilteredPageTree'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['highlightFilteredPageTree'],
-    'inputType' => 'checkbox', 
+    'inputType' => 'checkbox',
     'eval'      => array('tl_class' => 'w50 m12')
 ];
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['highlightSearchedPageTree'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['highlightSearchedPageTree'],
-    'inputType' => 'checkbox', 
+    'inputType' => 'checkbox',
     'eval'      => array('tl_class' => 'w50')
 ];
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['enlargePreviewImagesInFileManager'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['enlargePreviewImagesInFileManager'],
-    'inputType' => 'checkbox', 
+    'inputType' => 'checkbox',
     'eval'      => array('tl_class' => 'w50')
 ];
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['enlargeOptionField'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['enlargeOptionField'],
-    'inputType' => 'checkbox', 
+    'inputType' => 'checkbox',
     'eval'      => array('tl_class' => 'w50')
 ];
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['enlargeCssField'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['enlargeCssField'],
-    'inputType' => 'checkbox', 
+    'inputType' => 'checkbox',
     'eval'      => array('tl_class' => 'w50 clr')
 ];
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['enlargeTableFields'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['enlargeTableFields'],
-    'inputType' => 'checkbox', 
+    'inputType' => 'checkbox',
     'eval'      => array('tl_class' => 'w50 clr')
 ];
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['disableLinksInPageTreeToFilterTree'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['disableLinksInPageTreeToFilterTree'],
-    'inputType' => 'checkbox', 
+    'inputType' => 'checkbox',
     'eval'      => array('tl_class' => 'w50')
 ];
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['loadBackendSCSS'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['loadBackendSCSS'],
-    'inputType' => 'checkbox', 
+    'inputType' => 'checkbox',
     'eval'      => array('tl_class' => 'w50')
 ];
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['hideLayoutSectionsInArticleList'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['hideLayoutSectionsInArticleList'],
-    'inputType' => 'checkbox', 
+    'inputType' => 'checkbox',
+    'eval'      => array('tl_class' => 'w50 clr')
+];
+
+$GLOBALS['TL_DCA']['tl_user']['fields']['autoInsertFirstElement'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_user']['autoInsertFirstElement'],
+    'inputType' => 'checkbox',
     'eval'      => array('tl_class' => 'w50 clr')
 ];
