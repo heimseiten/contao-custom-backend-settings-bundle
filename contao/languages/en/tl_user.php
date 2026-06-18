@@ -1,6 +1,6 @@
 <?php
 
-$GLOBALS['TL_LANG']['tl_user']['CustomBackendSettingsAppearance'] = 'Custom backend settings';
+$GLOBALS['TL_LANG']['tl_user']['CustomBackendSettingsAppearance'] = 'Custom Backend Settings (heimseiten.de): appearance';
 
 $GLOBALS['TL_LANG']['tl_user']['highlightFilteredPageTree'] = array('highlight filtered page tree', '');
 $GLOBALS['TL_LANG']['tl_user']['highlightSearchedPageTree'] = array('highlight searched page tree', '');

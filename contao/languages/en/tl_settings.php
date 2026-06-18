@@ -1,6 +1,7 @@
 <?php
 
-$GLOBALS['TL_LANG']['tl_settings']['CustomBackendSettings'] = 'Custom backend settings';
+$GLOBALS['TL_LANG']['tl_settings']['CustomBackendSettings'] = 'Custom Backend Settings (heimseiten.de): functions';
+$GLOBALS['TL_LANG']['tl_settings']['CustomBackendSettingsLabels'] = 'Custom Backend Settings (heimseiten.de): front end labels';
 
 $GLOBALS['TL_LANG']['tl_settings']['publishArticleOnCreate'] = array('publish article on create', '');
 $GLOBALS['TL_LANG']['tl_settings']['publishPageOnCreate'] = array('publish page on create', '');

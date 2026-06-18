@@ -1,7 +1,7 @@
 <?php
 
-$GLOBALS['TL_LANG']['tl_settings']['CustomBackendSettings']   = 'erweiterte Einstellungen - Backend - Funktionen';
-$GLOBALS['TL_LANG']['tl_settings']['CustomBackendSettingsLabels']   = 'erweiterte Einstellungen - Frontend - Beschriftungen';
+$GLOBALS['TL_LANG']['tl_settings']['CustomBackendSettings']   = 'Custom Backend Settings (heimseiten.de): Funktionen';
+$GLOBALS['TL_LANG']['tl_settings']['CustomBackendSettingsLabels']   = 'Custom Backend Settings (heimseiten.de): Frontend-Beschriftungen';
 
 $GLOBALS['TL_LANG']['tl_settings']['publishArticleOnCreate']   = array('Artikel direkt veröffentlichen', 'Artikel beim Neuerstellen direkt veröffentlichen');
 $GLOBALS['TL_LANG']['tl_settings']['publishPageOnCreate']   = array('Seite direkt veröffentlichen', 'Seite beim Neuerstellen direkt veröffentlichen');

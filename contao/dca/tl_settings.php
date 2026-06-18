@@ -107,14 +107,14 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['copyEventsWithAllDetails'] = [
 ];
 
 $GLOBALS['TL_DCA']['tl_settings']['fields']['readMoreLabelDe'] = [
-    'label'     => &$GLOBALS['TL_LANG']['tl_article']['readMoreLabelDe'],
+    'label'     => &$GLOBALS['TL_LANG']['tl_settings']['readMoreLabelDe'],
     'inputType' => 'text',
     'eval'      => array('tl_class'=>'w50 clr'),
     'sql'       => "text NULL"
 ];
 
 $GLOBALS['TL_DCA']['tl_settings']['fields']['readMoreLabelEn'] = [
-    'label'     => &$GLOBALS['TL_LANG']['tl_article']['readMoreLabelEn'],
+    'label'     => &$GLOBALS['TL_LANG']['tl_settings']['readMoreLabelEn'],
     'inputType' => 'text',
     'eval'      => array('tl_class'=>'w50'),
     'sql'       => "text NULL"

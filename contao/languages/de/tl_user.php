@@ -1,6 +1,6 @@
 <?php
 
-$GLOBALS['TL_LANG']['tl_user']['CustomBackendSettingsAppearance']   = 'Backend-Einstellungen - erweitertes Erscheinungsbild';
+$GLOBALS['TL_LANG']['tl_user']['CustomBackendSettingsAppearance']   = 'Custom Backend Settings (heimseiten.de): Erscheinungsbild';
 
 $GLOBALS['TL_LANG']['tl_user']['highlightFilteredPageTree'] = array('gefilterten Seitenbaum hervorheben', '');
 $GLOBALS['TL_LANG']['tl_user']['highlightSearchedPageTree'] = array('durchsuchten Seitenbaum hervorheben', '');
