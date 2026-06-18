@@ -2,8 +2,8 @@
 
 $GLOBALS['TL_LANG']['tl_user']['CustomBackendSettingsAppearance'] = 'Custom Backend Settings (heimseiten.de): appearance';
 
-$GLOBALS['TL_LANG']['tl_user']['highlightFilteredPageTree'] = array('Highlight filtered page tree', 'Visually highlights the active filter in the page tree.');
-$GLOBALS['TL_LANG']['tl_user']['highlightSearchedPageTree'] = array('Highlight searched page tree', 'Visually highlights search results in the page tree.');
+$GLOBALS['TL_LANG']['tl_user']['highlightFilteredPageTree'] = array('Highlight filtered page tree', 'Colours the "show all content" link above the list and makes it pulsate while the view is filtered.');
+$GLOBALS['TL_LANG']['tl_user']['highlightSearchedPageTree'] = array('Highlight searched page tree', 'Makes the active search field pulsate in colour while a search is active.');
 $GLOBALS['TL_LANG']['tl_user']['enlargeCssField'] = array('Enlarge the "CSS class" field', 'Enlarges the "CSS class" field in articles and content elements so it stays readable after entering several classes.');
 $GLOBALS['TL_LANG']['tl_user']['enlargeOptionField'] = array('Enlarge the "options" field', 'Enlarges the "options" field, e.g. in the select menu in forms.');
 $GLOBALS['TL_LANG']['tl_user']['enlargeTableFields'] = array('Enlarge the fields of the "table" content element', 'Enlarges the input fields of the table content element.');

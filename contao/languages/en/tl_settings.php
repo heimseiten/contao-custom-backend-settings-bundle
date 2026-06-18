@@ -10,10 +10,10 @@ $GLOBALS['TL_LANG']['tl_settings']['publishEventOnCreate']   = array('Publish ev
 $GLOBALS['TL_LANG']['tl_settings']['copiedPageOrArticleWithoutLabelCopy'] = array('Copy without appending "(copy)"', 'When copying pages or articles, do not append "(copy)" to the name.');
 $GLOBALS['TL_LANG']['tl_settings']['copyNewsWithAllDetails']   = array('Real copying of news', 'Copy news items with all details (date, publication status, etc.).');
 $GLOBALS['TL_LANG']['tl_settings']['copyEventsWithAllDetails'] = array('Real copying of events', 'Copy events with all details (date, publication status, etc.).');
-$GLOBALS['TL_LANG']['tl_settings']['memberFieldsNotMandatory'] = array('First name, last name and country not mandatory', 'Make first name, last name and country optional in the member data.');
+$GLOBALS['TL_LANG']['tl_settings']['memberFieldsNotMandatory'] = array('Not mandatory fields', 'First name, last name and country are no longer mandatory in the member data.');
 $GLOBALS['TL_LANG']['tl_settings']['formFieldAllowHtml'] = array('Allow HTML in form fields', 'To insert e.g. a line break with &lt;br&gt; in the field label.');
-$GLOBALS['TL_LANG']['tl_settings']['addParagraphOptionToHeadlineField'] = array('Add paragraph (p) option to the headline field', 'Adds the "p" tag option to the headline element.');
-$GLOBALS['TL_LANG']['tl_settings']['addStrongOptionToHeadlineField']    = array('Add bold (strong) option to the headline field', 'Adds the "strong" tag option to the headline element.');
+$GLOBALS['TL_LANG']['tl_settings']['addParagraphOptionToHeadlineField'] = array('Paragraph (p) in the headline field', 'Adds the "p" tag option to the headline element.');
+$GLOBALS['TL_LANG']['tl_settings']['addStrongOptionToHeadlineField']    = array('Bold (strong) in the headline field', 'Adds the "strong" tag option to the headline element.');
 
 $GLOBALS['TL_LANG']['tl_settings']['readMoreLabelDe'] = array('"Read more" link (German)', 'Overrides the "read more" text – e.g. in the news list.');
 $GLOBALS['TL_LANG']['tl_settings']['readMoreLabelEn'] = array('"Read more" link (English)', 'As above, for English-language pages.');

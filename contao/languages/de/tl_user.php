@@ -2,8 +2,8 @@
 
 $GLOBALS['TL_LANG']['tl_user']['CustomBackendSettingsAppearance'] = 'Custom Backend Settings (heimseiten.de): Erscheinungsbild';
 
-$GLOBALS['TL_LANG']['tl_user']['highlightFilteredPageTree'] = array('Gefilterten Seitenbaum hervorheben', 'Hebt den aktiven Filter im Seitenbaum optisch hervor.');
-$GLOBALS['TL_LANG']['tl_user']['highlightSearchedPageTree'] = array('Durchsuchten Seitenbaum hervorheben', 'Hebt Suchtreffer im Seitenbaum optisch hervor.');
+$GLOBALS['TL_LANG']['tl_user']['highlightFilteredPageTree'] = array('Gefilterten Seitenbaum hervorheben', 'Markiert den Link „Alle Inhalte anzeigen" über der Liste farbig und lässt ihn pulsieren, sobald die Ansicht gefiltert ist.');
+$GLOBALS['TL_LANG']['tl_user']['highlightSearchedPageTree'] = array('Durchsuchten Seitenbaum hervorheben', 'Lässt das aktive Suchfeld farbig pulsieren, solange eine Suche aktiv ist.');
 $GLOBALS['TL_LANG']['tl_user']['enlargeCssField'] = array('Feld „CSS-Klasse" verlängern', 'Verlängert das Feld „CSS-Klasse" in den Einstellungen der Artikel und Inhaltselemente, damit es auch nach dem Eintragen mehrerer Klassen übersichtlich bleibt.');
 $GLOBALS['TL_LANG']['tl_user']['enlargeOptionField'] = array('Feld „Optionen" verlängern', 'Verlängert das Feld „Optionen", z. B. beim Select-Menü in den Formularen.');
 $GLOBALS['TL_LANG']['tl_user']['enlargeTableFields'] = array('Felder des Inhaltselements „Tabelle" vergrößern', 'Vergrößert die Eingabefelder des Tabellen-Inhaltselements.');

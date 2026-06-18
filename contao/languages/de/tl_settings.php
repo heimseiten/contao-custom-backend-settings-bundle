@@ -10,10 +10,10 @@ $GLOBALS['TL_LANG']['tl_settings']['publishEventOnCreate']   = array('Event dire
 $GLOBALS['TL_LANG']['tl_settings']['copiedPageOrArticleWithoutLabelCopy'] = array('Kopieren ohne „(Kopie)" anzuhängen', 'Beim Kopieren von Seiten oder Artikeln nicht „(Kopie)" an den Namen hängen.');
 $GLOBALS['TL_LANG']['tl_settings']['copyNewsWithAllDetails']   = array('Echtes Kopieren von Nachrichten', 'Nachrichten mit allen Details kopieren (Datum, Veröffentlichungsstatus usw.).');
 $GLOBALS['TL_LANG']['tl_settings']['copyEventsWithAllDetails'] = array('Echtes Kopieren von Events', 'Events mit allen Details kopieren (Datum, Veröffentlichungsstatus usw.).');
-$GLOBALS['TL_LANG']['tl_settings']['memberFieldsNotMandatory'] = array('Vorname, Nachname und Land nicht als Pflichtfelder', 'Vorname, Nachname und Land in den Mitgliederdaten nicht verpflichtend.');
+$GLOBALS['TL_LANG']['tl_settings']['memberFieldsNotMandatory'] = array('nicht als Pflichtfelder', 'Vorname, Nachname und Land sind in den Mitgliederdaten dann keine Pflichtfelder mehr.');
 $GLOBALS['TL_LANG']['tl_settings']['formFieldAllowHtml'] = array('HTML in Formularfeldern erlauben', 'Um z. B. einen Zeilenumbruch mit &lt;br&gt; in der Feldbezeichnung einzufügen.');
-$GLOBALS['TL_LANG']['tl_settings']['addParagraphOptionToHeadlineField'] = array('Absatz (p) im Feld „Überschrift" ergänzen', 'Fügt dem Überschriften-Element die Tag-Option „p" hinzu.');
-$GLOBALS['TL_LANG']['tl_settings']['addStrongOptionToHeadlineField']    = array('Fett (strong) im Feld „Überschrift" ergänzen', 'Fügt dem Überschriften-Element die Tag-Option „strong" hinzu.');
+$GLOBALS['TL_LANG']['tl_settings']['addParagraphOptionToHeadlineField'] = array('Absatz (p) im Feld „Überschrift"', 'Fügt dem Überschriften-Element die Tag-Option „p" hinzu.');
+$GLOBALS['TL_LANG']['tl_settings']['addStrongOptionToHeadlineField']    = array('Fett (strong) im Feld „Überschrift"', 'Fügt dem Überschriften-Element die Tag-Option „strong" hinzu.');
 
 $GLOBALS['TL_LANG']['tl_settings']['readMoreLabelDe'] = array('„Weiterlesen"-Link (Deutsch)', 'Überschreibt den „Weiterlesen"-Text – z. B. in der News-Listenansicht.');
 $GLOBALS['TL_LANG']['tl_settings']['readMoreLabelEn'] = array('„Weiterlesen"-Link (Englisch)', 'Wie oben, für englischsprachige Seiten.');
