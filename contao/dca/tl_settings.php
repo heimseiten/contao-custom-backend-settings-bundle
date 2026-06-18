@@ -121,29 +121,29 @@ $GLOBALS['TL_DCA']['tl_settings']['fields']['readMoreLabelEn'] = [
 ];
 
 $GLOBALS['TL_DCA']['tl_settings']['fields']['nextLabelDe'] = [
-    'label'     => &$GLOBALS['TL_LANG']['tl_article']['nextLabelDe'],
+    'label'     => &$GLOBALS['TL_LANG']['tl_settings']['nextLabelDe'],
     'inputType' => 'text',
-    'eval'      => array('tl_class'=>'w25'),
+    'eval'      => array('tl_class'=>'w50 clr'),
     'sql'       => "text NULL"
 ];
 
 $GLOBALS['TL_DCA']['tl_settings']['fields']['previousLabelDe'] = [
-    'label'     => &$GLOBALS['TL_LANG']['tl_article']['previousLabelDe'],
+    'label'     => &$GLOBALS['TL_LANG']['tl_settings']['previousLabelDe'],
     'inputType' => 'text',
-    'eval'      => array('tl_class'=>'w25'),
+    'eval'      => array('tl_class'=>'w50 clr'),
     'sql'       => "text NULL"
 ];
 
 $GLOBALS['TL_DCA']['tl_settings']['fields']['nextLabelEn'] = [
-    'label'     => &$GLOBALS['TL_LANG']['tl_article']['nextLabelEn'],
+    'label'     => &$GLOBALS['TL_LANG']['tl_settings']['nextLabelEn'],
     'inputType' => 'text',
-    'eval'      => array('tl_class'=>'w25'),
+    'eval'      => array('tl_class'=>'w50'),
     'sql'       => "text NULL"
 ];
 
 $GLOBALS['TL_DCA']['tl_settings']['fields']['previousLabelEn'] = [
-    'label'     => &$GLOBALS['TL_LANG']['tl_article']['previousLabelEn'],
+    'label'     => &$GLOBALS['TL_LANG']['tl_settings']['previousLabelEn'],
     'inputType' => 'text',
-    'eval'      => array('tl_class'=>'w25'),
+    'eval'      => array('tl_class'=>'w50'),
     'sql'       => "text NULL"
 ];
