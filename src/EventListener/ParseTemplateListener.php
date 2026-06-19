@@ -85,6 +85,14 @@ final class ParseTemplateListener
             $template->javascripts .= $templateAdapter->generateScriptTag($controllerAdapter->addStaticUrlTo(self::ASSET_PATH . 'auto-insert-first-element.js'), false, null);
         }
 
+        if (true === (bool) $user->articleRowOpensContent) {
+            $template->javascripts .= $templateAdapter->generateScriptTag($controllerAdapter->addStaticUrlTo(self::ASSET_PATH . 'article-row-opens-content.js'), false, null);
+        }
+
+        if (true === (bool) $user->elementGroupRowOpensChildren) {
+            $template->javascripts .= $templateAdapter->generateScriptTag($controllerAdapter->addStaticUrlTo(self::ASSET_PATH . 'element-group-row-opens-children.js'), false, null);
+        }
+
         $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo(self::ASSET_PATH . 'column-group-preview.css'), null, null);
     }
 }

@@ -1,8 +1,8 @@
 # Contao Custom Backend Settings (heimseiten.de)
 
-Praktische Backend-Erweiterungen für **Contao 5**: zusätzliche Komfort-Optionen
-pro Backend-Benutzer (Erscheinungsbild) sowie globale Funktionen und
-Frontend-Beschriftungen in den Systemeinstellungen.
+Praktische Backend-Erweiterungen für **Contao 5**: Komfort-Optionen pro
+Backend-Benutzer (Erscheinungsbild, Verhalten, Funktionen), globale Funktionen in
+den Systemeinstellungen und Frontend-Beschriftungen pro Seitenlayout.
 
 Alle Optionen erscheinen unter Legenden mit dem Präfix
 **„Custom Backend Settings (heimseiten.de)"**, damit jederzeit erkennbar ist,
@@ -14,14 +14,17 @@ woher sie stammen.
 composer require heimseiten/contao-custom-backend-settings-bundle
 ```
 
+Anschließend einmal `vendor/bin/contao-console contao:migrate` ausführen (legt die
+für die Layout-Felder genutzte `jsonData`-Spalte an). Alle anderen Felder sind
+ebenfalls **Virtual Fields** – es werden keine eigenen Datenbankspalten angelegt.
+
 ## Funktionen
 
 ### Erscheinungsbild – pro Benutzer
 
-*Benutzer ▸ Benutzer bearbeiten ▸ Legende „Custom Backend Settings (heimseiten.de): Erscheinungsbild"*
+*Benutzer ▸ Benutzer bearbeiten ▸ Legende „… : Erscheinungsbild"*
 
-Diese Optionen wirken **nur für den jeweiligen Backend-Benutzer** – jeder richtet
-sich sein eigenes Erscheinungsbild ein.
+Diese Optionen wirken **nur für den jeweiligen Backend-Benutzer**.
 
 | Option | Wirkung |
 | --- | --- |
@@ -37,46 +40,56 @@ sich sein eigenes Erscheinungsbild ein.
 
 ### Verhalten – pro Benutzer
 
-*Benutzer ▸ Benutzer bearbeiten ▸ Legende „Custom Backend Settings (heimseiten.de): Verhalten"*
-
-Ebenfalls **nur für den jeweiligen Backend-Benutzer**.
+*Benutzer ▸ Benutzer bearbeiten ▸ Legende „… : Verhalten"*
 
 | Option | Wirkung |
 | --- | --- |
-| Erstes Element automatisch einfügen | Legt man in einer noch **leeren** sortierbaren Liste ein neues Element an (z. B. das erste Inhaltselement eines Artikels), zeigt Contao trotzdem die Positionsauswahl an – obwohl es nur eine mögliche Position gibt. Diese Option überspringt die Abfrage und fügt das Element automatisch ein. Sind bereits Elemente vorhanden, bleibt die Positionsauswahl unangetastet. |
+| Erstes Element automatisch einfügen | Legt man in einer noch **leeren** sortierbaren Liste ein neues Element an (z. B. das erste Inhaltselement eines Artikels), überspringt diese Option die ansonsten überflüssige Positionsauswahl und fügt automatisch ein. Sind bereits Elemente vorhanden, bleibt die Positionsauswahl unangetastet. |
+| Klick auf Artikel-Zeile öffnet die Inhaltselemente | Ein Klick auf die Zeile eines Artikels öffnet direkt dessen Inhaltselemente – wie der Button „Inhaltselemente bearbeiten". |
+| Klick auf Elementgruppen-Kopf öffnet die Kindelemente | Ein Klick auf die Kopfzeile einer Elementgruppe öffnet direkt deren Kindelemente – wie der Button „Kindelemente". |
+
+### Funktionen – pro Benutzer
+
+*Benutzer ▸ Benutzer bearbeiten ▸ Legende „… : Funktionen"*
+
+Jeder Redakteur entscheidet selbst – diese Schalter sind pro Benutzer.
+
+| Option | Wirkung |
+| --- | --- |
+| Seite / Artikel / Nachricht / Event direkt veröffentlichen | Neu angelegte Elemente sind sofort veröffentlicht – spart den Extra-Klick. |
+| Kopien ohne „(Kopie)"-Zusatz | Beim Kopieren wird kein „(Kopie)" an den Namen gehängt – gilt für **alle** Datensätze (Seiten, Artikel, News, Events …), nicht nur Seiten/Artikel. |
+| Echtes Kopieren von Nachrichten / Events | Kopiert Nachrichten bzw. Events inkl. aller Details (Datum, Autor, Veröffentlichungsstatus …) statt eines leeren Datensatzes. |
 
 ### Funktionen – global
 
-*System ▸ Einstellungen ▸ Legende „Custom Backend Settings (heimseiten.de): Funktionen"*
+*System ▸ Einstellungen ▸ Legende „… : Funktionen"*
 
 Diese Optionen gelten **für die gesamte Installation**.
 
 | Option | Wirkung |
 | --- | --- |
-| Seite / Artikel / Nachricht / Event direkt veröffentlichen | Neu angelegte Elemente sind sofort veröffentlicht – spart den Extra-Klick. |
-| Kopieren ohne „(Kopie)" anzuhängen | Beim Kopieren von Seiten oder Artikeln wird kein „(Kopie)" an den Namen gehängt. |
-| Echtes Kopieren von News / Events | Kopiert Nachrichten bzw. Events inkl. aller Details (Datum, Veröffentlichungsstatus …) statt eines leeren Datensatzes. |
-| Vorname, Nachname & Land nicht Pflichtfelder | Macht diese drei Felder in den Mitgliederdaten optional. |
+| Mitgliederfelder nicht verpflichtend | Macht Vorname, Nachname und Land in den Mitgliederdaten optional. |
 | HTML in Formularfeldern erlauben | Erlaubt HTML in der Feldbezeichnung, z. B. einen Zeilenumbruch `<br>`. |
 | Paragraf (p) / Fett (strong) im Feld „Überschrift" | Ergänzt zusätzliche Tag-Optionen im Überschriften-Inhaltselement. |
+| Beim Anlegen von Seiten keinen Artikel erzeugen | Contao legt beim Erstellen einer Seite normalerweise automatisch einen leeren Artikel in der Hauptspalte an. Diese Option verhindert das. |
 
-### Frontend-Beschriftungen – global
+### Frontend-Beschriftungen – pro Layout
 
-*System ▸ Einstellungen ▸ Legende „Custom Backend Settings (heimseiten.de): Frontend-Beschriftungen"*
+*Layout ▸ Layout bearbeiten ▸ Legende „… : Frontend-Beschriftungen"*
 
-Überschreibt einzelne Standardtexte des Frontends – getrennt nach Sprache
-(Deutsch / Englisch, greift anhand der Seitensprache).
+Überschreibt einzelne Standardtexte des Frontends **pro Seitenlayout**. Da ein
+Layout ohnehin sprachspezifisch ist, ersetzt das die frühere globale
+Deutsch/Englisch-Aufteilung.
 
 | Feld | Überschreibt |
 | --- | --- |
-| „Weiterlesen"-Link (DE/EN) | Den „Weiterlesen"-Text, z. B. in der News-Listenansicht. |
-| Pagination „zurück" (DE/EN) | Die Beschriftung des Zurück-Links in der Blätter-Navigation (Pagination). |
-| Pagination „vor" (DE/EN) | Die Beschriftung des Vor-Links in der Blätter-Navigation (Pagination). |
+| „Weiterlesen"-Link | Den „Weiterlesen"-Text (`MSC.more`), z. B. in der News-Listenansicht. |
+| Pagination „zurück" | Die Beschriftung des Zurück-Links in der Blätter-Navigation (`MSC.previous`). |
+| Pagination „vor" | Die Beschriftung des Vor-Links in der Blätter-Navigation (`MSC.next`). |
 
-> Intern werden diese Texte über `$GLOBALS['TL_LANG']['MSC']` gesetzt
-> (siehe `contao/languages/*/default.php`). Die gleiche Mechanik unterstützt
-> bereits `firstLabel`, `lastLabel` und `newsOverview` – diese sind aktuell nur
-> noch nicht als Backend-Felder freigeschaltet.
+> Gesetzt werden diese Texte im Frontend über den `getPageLayout`-Hook (klassische
+> Layouts) bzw. das `LayoutEvent` (moderne Twig-Layouts), jeweils bevor die Module
+> gerendert werden, die sie verwenden.
 
 ## Screenshots
 

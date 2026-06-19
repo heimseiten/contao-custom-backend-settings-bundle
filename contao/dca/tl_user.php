@@ -4,6 +4,7 @@ use Contao\DataContainer;
 
 PaletteManipulator::create()
     ->addLegend('CustomBackendSettingsLabels', 'backend_legend', PaletteManipulator::POSITION_AFTER)
+    ->addLegend('CustomBackendSettingsFunctions', 'backend_legend', PaletteManipulator::POSITION_AFTER)
     ->addLegend('CustomBackendSettingsBehaviour', 'backend_legend', PaletteManipulator::POSITION_AFTER)
     ->addLegend('CustomBackendSettingsAppearance', 'backend_legend', PaletteManipulator::POSITION_AFTER)
 
@@ -18,6 +19,16 @@ PaletteManipulator::create()
     ->addField('hideLayoutSectionsInArticleList', 'CustomBackendSettingsAppearance', PaletteManipulator::POSITION_APPEND)
 
     ->addField('autoInsertFirstElement', 'CustomBackendSettingsBehaviour', PaletteManipulator::POSITION_APPEND)
+    ->addField('articleRowOpensContent', 'CustomBackendSettingsBehaviour', PaletteManipulator::POSITION_APPEND)
+    ->addField('elementGroupRowOpensChildren', 'CustomBackendSettingsBehaviour', PaletteManipulator::POSITION_APPEND)
+
+    ->addField('publishPageOnCreate', 'CustomBackendSettingsFunctions', PaletteManipulator::POSITION_APPEND)
+    ->addField('publishArticleOnCreate', 'CustomBackendSettingsFunctions', PaletteManipulator::POSITION_APPEND)
+    ->addField('publishNewsOnCreate', 'CustomBackendSettingsFunctions', PaletteManipulator::POSITION_APPEND)
+    ->addField('publishEventOnCreate', 'CustomBackendSettingsFunctions', PaletteManipulator::POSITION_APPEND)
+    ->addField('copiedPageOrArticleWithoutLabelCopy', 'CustomBackendSettingsFunctions', PaletteManipulator::POSITION_APPEND)
+    ->addField('copyNewsWithAllDetails', 'CustomBackendSettingsFunctions', PaletteManipulator::POSITION_APPEND)
+    ->addField('copyEventsWithAllDetails', 'CustomBackendSettingsFunctions', PaletteManipulator::POSITION_APPEND)
 
     ->applyToPalette('default', 'tl_user')
     ->applyToPalette('login', 'tl_user')
@@ -85,4 +96,58 @@ $GLOBALS['TL_DCA']['tl_user']['fields']['autoInsertFirstElement'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['autoInsertFirstElement'],
     'inputType' => 'checkbox',
     'eval'      => array('tl_class' => 'w50 clr')
+];
+
+$GLOBALS['TL_DCA']['tl_user']['fields']['articleRowOpensContent'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_user']['articleRowOpensContent'],
+    'inputType' => 'checkbox',
+    'eval'      => array('tl_class' => 'w50')
+];
+
+$GLOBALS['TL_DCA']['tl_user']['fields']['elementGroupRowOpensChildren'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_user']['elementGroupRowOpensChildren'],
+    'inputType' => 'checkbox',
+    'eval'      => array('tl_class' => 'w50')
+];
+
+$GLOBALS['TL_DCA']['tl_user']['fields']['publishPageOnCreate'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_user']['publishPageOnCreate'],
+    'inputType' => 'checkbox',
+    'eval'      => array('tl_class' => 'w50 clr')
+];
+
+$GLOBALS['TL_DCA']['tl_user']['fields']['publishArticleOnCreate'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_user']['publishArticleOnCreate'],
+    'inputType' => 'checkbox',
+    'eval'      => array('tl_class' => 'w50')
+];
+
+$GLOBALS['TL_DCA']['tl_user']['fields']['publishNewsOnCreate'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_user']['publishNewsOnCreate'],
+    'inputType' => 'checkbox',
+    'eval'      => array('tl_class' => 'w50 clr')
+];
+
+$GLOBALS['TL_DCA']['tl_user']['fields']['publishEventOnCreate'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_user']['publishEventOnCreate'],
+    'inputType' => 'checkbox',
+    'eval'      => array('tl_class' => 'w50')
+];
+
+$GLOBALS['TL_DCA']['tl_user']['fields']['copiedPageOrArticleWithoutLabelCopy'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_user']['copiedPageOrArticleWithoutLabelCopy'],
+    'inputType' => 'checkbox',
+    'eval'      => array('tl_class' => 'w50 clr')
+];
+
+$GLOBALS['TL_DCA']['tl_user']['fields']['copyNewsWithAllDetails'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_user']['copyNewsWithAllDetails'],
+    'inputType' => 'checkbox',
+    'eval'      => array('tl_class' => 'w50')
+];
+
+$GLOBALS['TL_DCA']['tl_user']['fields']['copyEventsWithAllDetails'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_user']['copyEventsWithAllDetails'],
+    'inputType' => 'checkbox',
+    'eval'      => array('tl_class' => 'w50')
 ];

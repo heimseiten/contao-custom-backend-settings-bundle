@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
-if ( Contao\Config::get('publishArticleOnCreate') ) {
-    $GLOBALS['TL_DCA']['tl_article']['fields']['published']['default'] = true;
-}
+use Heimseiten\ContaoCustomBackendSettingsBundle\BackendSettings;
+
+// Per backend user ("Funktionen" in the user profile): publish a new article immediately.
+$GLOBALS['TL_DCA']['tl_article']['fields']['published']['default'] = static fn () => (bool) BackendSettings::user()?->publishArticleOnCreate;

@@ -5,3 +5,10 @@ services:
 
     Heimseiten\ContaoCustomBackendSettingsBundle\:
         resource: '../src/'
+        exclude:
+            - '../src/DependencyInjection/Compiler/'
+
+    # Replacement for Contao's article-on-page-create callback; needs the core listener it wraps.
+    Heimseiten\ContaoCustomBackendSettingsBundle\EventListener\PreventArticleGenerationListener:
+        arguments:
+            $contentComposition: '@contao.listener.data_container.content_composition'
