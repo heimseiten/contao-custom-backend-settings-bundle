@@ -1,16 +1,16 @@
 /*!
  * Custom Backend Settings (heimseiten.de)
- * Click an element-group header to open its child elements.
+ * Click a content element header to open (edit) the element.
  *
- * An element group shows a header row (".cte_type", with the "Elementgruppe"
- * label) and a read-only preview of its children. Clicking that header opens the
- * group's child elements - exactly the "child elements" operation
- * (href do=article&id=<id>&table=tl_content&ptable=tl_content). The header shows
- * a pointer cursor.
+ * Clicking the header row (".cte_type", with the type label) of a normal content
+ * element opens it for editing - exactly the "edit" operation (pencil,
+ * href do=article&id=<id>&table=tl_content&act=edit). The header shows a pointer
+ * cursor.
  *
- * Only element groups carry such a child link, so regular content elements are
- * never affected (those are handled by content-element-row-opens-element.js).
- * Clicks on links and buttons (incl. the drag handle) are left untouched.
+ * Element groups are left to element-group-row-opens-children.js (they carry a
+ * "child elements" link, ptable=tl_content); here they are skipped, so the two
+ * features can be enabled together without conflict. Clicks on links and buttons
+ * (incl. the drag handle) are left untouched.
  */
 (function () {
     'use strict';
@@ -21,7 +21,7 @@
 
     function applyCursor() {
         document.querySelectorAll('.tl_content').forEach(function (content) {
-            if (!isGroup(content)) {
+            if (isGroup(content)) {
                 return;
             }
             var header = content.querySelector('.cte_type');
@@ -44,11 +44,11 @@
 
         var content = header.closest('.tl_content');
 
-        if (!content || !isGroup(content)) {
+        if (!content || isGroup(content)) {
             return;
         }
 
-        var link = content.querySelector('a[href*="ptable=tl_content"]');
+        var link = content.querySelector('a[href*="act=edit"]:not([href*="versions"]):not([href*="ptable"])');
 
         if (link) {
             event.preventDefault();

@@ -16,6 +16,8 @@ $GLOBALS['TL_LANG']['tl_user']['hideLayoutSectionsInArticleList'] = array('Layou
 $GLOBALS['TL_LANG']['tl_user']['autoInsertFirstElement'] = array('Erstes Element automatisch einfügen', 'Beim Anlegen eines neuen Elements in einer noch leeren Liste (z. B. das erste Inhaltselement eines Artikels) wird die Positionsabfrage übersprungen und das Element automatisch an der einzig möglichen Stelle eingefügt.');
 $GLOBALS['TL_LANG']['tl_user']['articleRowOpensContent'] = array('Klick auf Artikel-Zeile öffnet die Inhaltselemente', 'Ein Klick auf die Zeile eines Artikels öffnet direkt dessen Inhaltselemente – wie der Button „Inhaltselemente bearbeiten".');
 $GLOBALS['TL_LANG']['tl_user']['elementGroupRowOpensChildren'] = array('Klick auf Elementgruppen-Kopf öffnet die Kindelemente', 'Ein Klick auf die Kopfzeile einer Elementgruppe öffnet direkt deren Kindelemente – wie der Button „Kindelemente".');
+$GLOBALS['TL_LANG']['tl_user']['contentElementRowOpensElement'] = array('Klick auf Inhaltselement-Kopf öffnet das Element', 'Ein Klick auf die Titelzeile eines (normalen) Inhaltselements öffnet es zum Bearbeiten – wie der Stift-Button.');
+$GLOBALS['TL_LANG']['tl_user']['pageRowOpensSettings'] = array('Klick auf Seiten-Zeile öffnet die Seiteneinstellungen', 'Ein Klick auf die Zeile einer Seite öffnet ihre Einstellungen zum Bearbeiten – wie der Stift-Button.');
 
 $GLOBALS['TL_LANG']['tl_user']['publishPageOnCreate']    = array('Seite direkt veröffentlichen', 'Eine neu angelegte Seite ist sofort veröffentlicht.');
 $GLOBALS['TL_LANG']['tl_user']['publishArticleOnCreate'] = array('Artikel direkt veröffentlichen', 'Ein neu angelegter Artikel ist sofort veröffentlicht.');

@@ -93,6 +93,14 @@ final class ParseTemplateListener
             $template->javascripts .= $templateAdapter->generateScriptTag($controllerAdapter->addStaticUrlTo(self::ASSET_PATH . 'element-group-row-opens-children.js'), false, null);
         }
 
+        if (true === (bool) $user->contentElementRowOpensElement) {
+            $template->javascripts .= $templateAdapter->generateScriptTag($controllerAdapter->addStaticUrlTo(self::ASSET_PATH . 'content-element-row-opens-element.js'), false, null);
+        }
+
+        if (true === (bool) $user->pageRowOpensSettings) {
+            $template->javascripts .= $templateAdapter->generateScriptTag($controllerAdapter->addStaticUrlTo(self::ASSET_PATH . 'page-row-opens-settings.js'), false, null);
+        }
+
         $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo(self::ASSET_PATH . 'column-group-preview.css'), null, null);
     }
 }

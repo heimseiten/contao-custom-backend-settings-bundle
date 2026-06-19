@@ -47,6 +47,10 @@ Diese Optionen wirken **nur für den jeweiligen Backend-Benutzer**.
 | Erstes Element automatisch einfügen | Legt man in einer noch **leeren** sortierbaren Liste ein neues Element an (z. B. das erste Inhaltselement eines Artikels), überspringt diese Option die ansonsten überflüssige Positionsauswahl und fügt automatisch ein. Sind bereits Elemente vorhanden, bleibt die Positionsauswahl unangetastet. |
 | Klick auf Artikel-Zeile öffnet die Inhaltselemente | Ein Klick auf die Zeile eines Artikels öffnet direkt dessen Inhaltselemente – wie der Button „Inhaltselemente bearbeiten". |
 | Klick auf Elementgruppen-Kopf öffnet die Kindelemente | Ein Klick auf die Kopfzeile einer Elementgruppe öffnet direkt deren Kindelemente – wie der Button „Kindelemente". |
+| Klick auf Inhaltselement-Kopf öffnet das Element | Ein Klick auf die Titelzeile eines (normalen) Inhaltselements öffnet es zum Bearbeiten – wie der Stift-Button. |
+| Klick auf Seiten-Zeile öffnet die Seiteneinstellungen | Ein Klick auf die Zeile einer Seite öffnet ihre Einstellungen zum Bearbeiten – wie der Stift-Button. |
+
+> Die anklickbaren Zeilen bzw. Köpfe zeigen beim Überfahren einen Pointer-Cursor.
 
 ### Funktionen – pro Benutzer
 
@@ -77,9 +81,9 @@ Diese Optionen gelten **für die gesamte Installation**.
 
 *Layout ▸ Layout bearbeiten ▸ Legende „… : Frontend-Beschriftungen"*
 
-Überschreibt einzelne Standardtexte des Frontends **pro Seitenlayout**. Da ein
-Layout ohnehin sprachspezifisch ist, ersetzt das die frühere globale
-Deutsch/Englisch-Aufteilung.
+Überschreibt einzelne Standardtexte des Frontends **pro Seitenlayout**, jeweils
+getrennt nach **Deutsch und Englisch** (ein Layout kann beide Sprachen bedienen).
+Im Frontend greift automatisch die zur jeweiligen Seitensprache passende Variante.
 
 | Feld | Überschreibt |
 | --- | --- |

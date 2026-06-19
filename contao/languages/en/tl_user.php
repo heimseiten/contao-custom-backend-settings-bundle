@@ -16,6 +16,8 @@ $GLOBALS['TL_LANG']['tl_user']['hideLayoutSectionsInArticleList'] = array('Hide 
 $GLOBALS['TL_LANG']['tl_user']['autoInsertFirstElement'] = array('Insert the first element automatically', 'When creating a new element in an empty list (e.g. the first content element of an article), the "choose position" prompt is skipped and the element is inserted automatically at the only possible position.');
 $GLOBALS['TL_LANG']['tl_user']['articleRowOpensContent'] = array('Clicking an article row opens its content elements', 'Clicking the row of an article opens its content elements directly – like the "edit article content" button.');
 $GLOBALS['TL_LANG']['tl_user']['elementGroupRowOpensChildren'] = array('Clicking an element group header opens its children', 'Clicking the header row of an element group opens its child elements directly – like the "child elements" button.');
+$GLOBALS['TL_LANG']['tl_user']['contentElementRowOpensElement'] = array('Clicking a content element header opens the element', 'Clicking the title row of a (normal) content element opens it for editing – like the pencil button.');
+$GLOBALS['TL_LANG']['tl_user']['pageRowOpensSettings'] = array('Clicking a page row opens the page settings', 'Clicking the row of a page opens its settings for editing – like the pencil button.');
 
 $GLOBALS['TL_LANG']['tl_user']['publishPageOnCreate']    = array('Publish page on create', 'A newly created page is published immediately.');
 $GLOBALS['TL_LANG']['tl_user']['publishArticleOnCreate'] = array('Publish article on create', 'A newly created article is published immediately.');

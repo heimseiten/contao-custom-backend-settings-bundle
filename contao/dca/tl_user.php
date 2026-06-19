@@ -21,6 +21,8 @@ PaletteManipulator::create()
     ->addField('autoInsertFirstElement', 'CustomBackendSettingsBehaviour', PaletteManipulator::POSITION_APPEND)
     ->addField('articleRowOpensContent', 'CustomBackendSettingsBehaviour', PaletteManipulator::POSITION_APPEND)
     ->addField('elementGroupRowOpensChildren', 'CustomBackendSettingsBehaviour', PaletteManipulator::POSITION_APPEND)
+    ->addField('contentElementRowOpensElement', 'CustomBackendSettingsBehaviour', PaletteManipulator::POSITION_APPEND)
+    ->addField('pageRowOpensSettings', 'CustomBackendSettingsBehaviour', PaletteManipulator::POSITION_APPEND)
 
     ->addField('publishPageOnCreate', 'CustomBackendSettingsFunctions', PaletteManipulator::POSITION_APPEND)
     ->addField('publishArticleOnCreate', 'CustomBackendSettingsFunctions', PaletteManipulator::POSITION_APPEND)
@@ -106,6 +108,18 @@ $GLOBALS['TL_DCA']['tl_user']['fields']['articleRowOpensContent'] = [
 
 $GLOBALS['TL_DCA']['tl_user']['fields']['elementGroupRowOpensChildren'] = [
     'label' => &$GLOBALS['TL_LANG']['tl_user']['elementGroupRowOpensChildren'],
+    'inputType' => 'checkbox',
+    'eval'      => array('tl_class' => 'w50')
+];
+
+$GLOBALS['TL_DCA']['tl_user']['fields']['contentElementRowOpensElement'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_user']['contentElementRowOpensElement'],
+    'inputType' => 'checkbox',
+    'eval'      => array('tl_class' => 'w50')
+];
+
+$GLOBALS['TL_DCA']['tl_user']['fields']['pageRowOpensSettings'] = [
+    'label' => &$GLOBALS['TL_LANG']['tl_user']['pageRowOpensSettings'],
     'inputType' => 'checkbox',
     'eval'      => array('tl_class' => 'w50')
 ];
