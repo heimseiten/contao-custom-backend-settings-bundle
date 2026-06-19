@@ -2,14 +2,14 @@
  * Custom Backend Settings (heimseiten.de)
  * Click a page row to open the page settings.
  *
- * In the page tree (do=page) the page label is not a link; clicking the row only
- * toggles its checkbox. This makes a click on the row open the page settings -
- * exactly the "edit" operation (pencil, href do=page&act=edit&id=<id>). The
- * clickable row label shows a pointer cursor.
+ * In the page tree (do=page) the page NAME is a link that filters the tree
+ * (do=page&pn=<id>). This intercepts a click on the row label and opens the page
+ * settings instead - exactly the "edit" operation (pencil, do=page&act=edit&id=<id>).
+ * The clickable row label shows a pointer cursor.
  *
- * It reuses the row's own edit link, so the generated URL always matches Contao's
- * (request token, permissions). Clicks on real links, buttons, inputs and the
- * operations column are left untouched.
+ * Kept untouched: the "open in a new window" preview icon, the operations column
+ * and form controls. The listener runs in the capture phase and stops the event,
+ * so the tree-filter link (and Turbo) never take over.
  */
 (function () {
     'use strict';
@@ -23,25 +23,39 @@
     }
 
     document.addEventListener('click', function (event) {
-        if (event.target.closest('a, button, input, label, .tl_right')) {
+        // Operations column and form controls keep their behaviour.
+        if (event.target.closest('button, input, label, .tl_right')) {
             return;
         }
 
-        var row = event.target.closest(ROW);
+        // Keep the "open in a new window" preview link.
+        if (event.target.closest('a[target="_blank"], a[href*="/preview"]')) {
+            return;
+        }
+
+        // Only act inside the label area of a page row (this also covers the page
+        // name link, which we deliberately override from "filter tree" to "edit").
+        var left = event.target.closest('.tl_left');
+
+        if (!left) {
+            return;
+        }
+
+        var row = left.closest(ROW);
 
         if (!row) {
             return;
         }
 
-        // Own edit link (not the "show differences" / versions variant). querySelector
-        // returns the row's own operation, which precedes any nested child page rows.
+        // The row's own edit link (not the "show differences" / versions variant).
         var link = row.querySelector('a[href*="act=edit"]:not([href*="versions"])');
 
         if (link) {
             event.preventDefault();
+            event.stopPropagation();
             link.click();
         }
-    });
+    }, true);
 
     document.addEventListener('turbo:load', applyCursor);
     document.addEventListener('turbo:render', applyCursor);
