@@ -1,4 +1,4 @@
-# Contao Custom Backend Settings (heimseiten.de)
+# Contao Custom Backend Settings
 
 Praktische Backend-Erweiterungen für **Contao 5**: Komfort-Optionen pro
 Backend-Benutzer (Erscheinungsbild, Verhalten, Funktionen), globale Funktionen in
@@ -97,5 +97,6 @@ Im Frontend greift automatisch die zur jeweiligen Seitensprache passende Variant
 
 ## Screenshots
 
-<img width="1922" alt="Bildschirmfoto 2024-05-15 um 21 10 59" src="https://github.com/heimseiten/contao-custom-backend-settings-bundle/assets/6552484/95e81a05-9bbe-421e-93e1-2f2f9abd48c2">
-<img width="1913" alt="Bildschirmfoto 2024-05-15 um 21 11 47" src="https://github.com/heimseiten/contao-custom-backend-settings-bundle/assets/6552484/e8ddcd5e-db86-4c94-8dbb-89b2ff976327">
+<img width="1782" height="1347" alt="Bildschirmfoto 2026-06-22 um 10 06 48" src="https://github.com/user-attachments/assets/4d0ca86b-b3fb-40c4-ae2e-a945af465e67" />
+<img width="1832" height="930" alt="Bildschirmfoto 2026-06-22 um 10 07 12" src="https://github.com/user-attachments/assets/597c9dfe-3f6e-4f34-aacd-20596adbea08" />
+<img width="1805" height="873" alt="Bildschirmfoto 2026-06-22 um 10 07 30" src="https://github.com/user-attachments/assets/8a9ae351-42a4-4328-8877-ab80bf09568c" />
