@@ -2,14 +2,16 @@
  * Custom Backend Settings (heimseiten.de)
  * Click a page row to open the page settings.
  *
- * In the page tree (do=page) the page NAME is a link that filters the tree
- * (do=page&pn=<id>). This intercepts a click on the row label and opens the page
- * settings instead - exactly the "edit" operation (pencil, do=page&act=edit&id=<id>).
- * The clickable row label shows a pointer cursor.
+ * Clicking the empty label area of a page row opens the page settings - exactly
+ * the "edit" operation (pencil, do=page&act=edit&id=<id>). The clickable area
+ * shows a pointer cursor.
  *
- * Kept untouched: the "open in a new window" preview icon, the operations column
- * and form controls. The listener runs in the capture phase and stops the event,
- * so the tree-filter link (and Turbo) never take over.
+ * The row's own interactive controls keep their native behaviour and are NOT
+ * hijacked: the expand/collapse toggle arrow (contao--toggle-nodes), the page
+ * name link that filters the tree (do=page&pn=<id>), the "open in a new window"
+ * preview icon, the operations column and form controls. The listener runs in
+ * the capture phase and stops the event only for the plain label area, so Turbo
+ * never takes over there.
  */
 (function () {
     'use strict';
@@ -28,13 +30,23 @@
             return;
         }
 
+        // Keep the tree-navigation controls: the expand/collapse toggle arrow
+        // (a.foldable / contao--toggle-nodes) must keep toggling the node.
+        if (event.target.closest('[data-action*="toggle-nodes"], a.foldable')) {
+            return;
+        }
+
+        // Keep the page-name link that filters the tree (do=page&pn=<id>).
+        if (event.target.closest('a[href*="&pn="], a[href*="?pn="]')) {
+            return;
+        }
+
         // Keep the "open in a new window" preview link.
         if (event.target.closest('a[target="_blank"], a[href*="/preview"]')) {
             return;
         }
 
-        // Only act inside the label area of a page row (this also covers the page
-        // name link, which we deliberately override from "filter tree" to "edit").
+        // Only act inside the label area of a page row.
         var left = event.target.closest('.tl_left');
 
         if (!left) {
