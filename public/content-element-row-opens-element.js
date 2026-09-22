@@ -5,10 +5,14 @@
  * Clicking the header row (".cte_type", with the type label) of a normal content
  * element opens it for editing - exactly the "edit" operation (pencil,
  * href do=article&id=<id>&table=tl_content&act=edit). The header shows a pointer
- * cursor.
+ * cursor. This also works inside element groups.
+ *
+ * Operation links are found by their CSS class (Contao adds the operation name,
+ * e.g. "a.edit", "a.children"), not by their href: inside an element group every
+ * operation link carries ptable=tl_content.
  *
  * Element groups are left to element-group-row-opens-children.js (they carry a
- * "child elements" link, ptable=tl_content); here they are skipped, so the two
+ * "child elements" link, a.children); here they are skipped, so the two
  * features can be enabled together without conflict. Clicks on links and buttons
  * (incl. the drag handle) are left untouched.
  */
@@ -16,7 +20,7 @@
     'use strict';
 
     function isGroup(content) {
-        return !!content.querySelector('a[href*="ptable=tl_content"]');
+        return !!content.querySelector('.tl_content_right a.children[href*="ptable=tl_content"]');
     }
 
     function applyCursor() {
@@ -48,7 +52,7 @@
             return;
         }
 
-        var link = content.querySelector('a[href*="act=edit"]:not([href*="versions"]):not([href*="ptable"])');
+        var link = content.querySelector('.tl_content_right a.edit');
 
         if (link) {
             event.preventDefault();

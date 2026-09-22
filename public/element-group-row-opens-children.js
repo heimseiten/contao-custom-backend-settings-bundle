@@ -6,7 +6,12 @@
  * label) and a read-only preview of its children. Clicking that header opens the
  * group's child elements - exactly the "child elements" operation
  * (href do=article&id=<id>&table=tl_content&ptable=tl_content). The header shows
- * a pointer cursor.
+ * a pointer cursor. This works at every nesting level.
+ *
+ * The link is found by its CSS class: Contao adds the operation name to every
+ * operation link ("a.children", "a.edit"). The href alone is not enough - inside
+ * an element group every operation link carries ptable=tl_content, so the edit
+ * link of a nested group would be taken for its child link.
  *
  * Only element groups carry such a child link, so regular content elements are
  * never affected (those are handled by content-element-row-opens-element.js).
@@ -15,13 +20,13 @@
 (function () {
     'use strict';
 
-    function isGroup(content) {
-        return !!content.querySelector('a[href*="ptable=tl_content"]');
+    function childrenLink(content) {
+        return content.querySelector('.tl_content_right a.children[href*="ptable=tl_content"]');
     }
 
     function applyCursor() {
         document.querySelectorAll('.tl_content').forEach(function (content) {
-            if (!isGroup(content)) {
+            if (!childrenLink(content)) {
                 return;
             }
             var header = content.querySelector('.cte_type');
@@ -44,11 +49,11 @@
 
         var content = header.closest('.tl_content');
 
-        if (!content || !isGroup(content)) {
+        if (!content) {
             return;
         }
 
-        var link = content.querySelector('a[href*="ptable=tl_content"]');
+        var link = childrenLink(content);
 
         if (link) {
             event.preventDefault();
