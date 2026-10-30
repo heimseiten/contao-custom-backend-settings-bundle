@@ -69,7 +69,8 @@ final class ParseTemplateListener
             $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo(self::ASSET_PATH . 'enlarge-file-manager-previews.css'), null, null);
         }
 
-        if (true === (bool) $user->disableLinksInPageTreeToFilterTree) {
+        // On by default: a user who never saved this checkbox has no value (null) and gets it too.
+        if (null === $user->disableLinksInPageTreeToFilterTree || true === (bool) $user->disableLinksInPageTreeToFilterTree) {
             $template->stylesheets .= $templateAdapter->generateStyleTag($controllerAdapter->addStaticUrlTo(self::ASSET_PATH . 'disable-page-tree-filter-links.css'), null, null);
         }
 
