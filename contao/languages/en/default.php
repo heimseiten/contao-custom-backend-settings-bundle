@@ -8,3 +8,8 @@ use Heimseiten\ContaoCustomBackendSettingsBundle\BackendSettings;
 if (BackendSettings::user()?->copiedPageOrArticleWithoutLabelCopy) {
     $GLOBALS['TL_LANG']['MSC']['copyOf'] = '%s';
 }
+
+// Hint for insert tags (InsertTagHintListener)
+$GLOBALS['TL_LANG']['MSC']['insertTagHint'] = array('Placeholders (insert tags) in this record', 'These contents are maintained elsewhere and only inserted here. Change them there and they are correct everywhere.');
+$GLOBALS['TL_LANG']['MSC']['insertTagHintEdit'] = 'edit';
+$GLOBALS['TL_LANG']['MSC']['insertTagHintEditOf'] = 'edit "%s"';

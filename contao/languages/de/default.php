@@ -8,3 +8,8 @@ use Heimseiten\ContaoCustomBackendSettingsBundle\BackendSettings;
 if (BackendSettings::user()?->copiedPageOrArticleWithoutLabelCopy) {
     $GLOBALS['TL_LANG']['MSC']['copyOf'] = '%s';
 }
+
+// Hinweis bei Insert-Tags (InsertTagHintListener)
+$GLOBALS['TL_LANG']['MSC']['insertTagHint'] = array('Platzhalter (Insert-Tags) in diesem Datensatz', 'Diese Inhalte werden an anderer Stelle gepflegt und hier nur eingesetzt. Ändern Sie sie dort, dann stimmen sie überall.');
+$GLOBALS['TL_LANG']['MSC']['insertTagHintEdit'] = 'bearbeiten';
+$GLOBALS['TL_LANG']['MSC']['insertTagHintEditOf'] = '„%s“ bearbeiten';
