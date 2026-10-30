@@ -1,11 +1,13 @@
 /*!
  * Custom Backend Settings (heimseiten.de)
- * Click a content element header to open (edit) the element.
+ * Click a content element header or its preview to open (edit) the element.
  *
  * Clicking the header row (".cte_type", with the type label) of a normal content
  * element opens it for editing - exactly the "edit" operation (pencil,
  * href do=article&id=<id>&table=tl_content&act=edit). The header shows a pointer
- * cursor. This also works inside element groups.
+ * cursor. The preview area (".cte_preview") opens it as well, except for clicks on
+ * links, buttons, form fields or while selecting text. This also works inside element
+ * groups.
  *
  * Operation links are found by their CSS class (Contao adds the operation name,
  * e.g. "a.edit", "a.children"), not by their href: inside an element group every
@@ -28,19 +30,27 @@
             if (isGroup(content)) {
                 return;
             }
-            var header = content.querySelector('.cte_type');
-            if (header) {
-                header.style.cursor = 'pointer';
-            }
+            content.querySelectorAll('.cte_type, .cte_preview').forEach(function (bereich) {
+                bereich.style.cursor = 'pointer';
+            });
         });
     }
 
-    document.addEventListener('click', function (event) {
-        if (event.target.closest('a, button, input, label')) {
-            return;
+function istKlickziel(event) {
+        // Links, Knöpfe, Formularfelder und aufklappbare Teile in der Vorschau behalten ihre eigene Funktion
+        if (event.target.closest('a, button, input, label, select, textarea, summary, video, audio')) {
+            return null;
         }
+        // wer in der Vorschau Text markiert, will nichts öffnen
+        var auswahl = window.getSelection ? String(window.getSelection()) : '';
+        if (auswahl.trim() !== '') {
+            return null;
+        }
+        return event.target.closest('.cte_type, .cte_preview');
+    }
 
-        var header = event.target.closest('.cte_type');
+    document.addEventListener('click', function (event) {
+        var header = istKlickziel(event);
 
         if (!header) {
             return;

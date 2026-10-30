@@ -1,12 +1,14 @@
 /*!
  * Custom Backend Settings (heimseiten.de)
- * Click an element-group header to open its child elements.
+ * Click an element-group header or its preview to open its child elements.
  *
  * An element group shows a header row (".cte_type", with the "Elementgruppe"
  * label) and a read-only preview of its children. Clicking that header opens the
  * group's child elements - exactly the "child elements" operation
  * (href do=article&id=<id>&table=tl_content&ptable=tl_content). The header shows
- * a pointer cursor. This works at every nesting level.
+ * a pointer cursor. The preview area (".cte_preview") opens them as well, except for
+ * clicks on links, buttons, form fields or while selecting text. This works at every
+ * nesting level.
  *
  * The link is found by its CSS class: Contao adds the operation name to every
  * operation link ("a.children", "a.edit"). The href alone is not enough - inside
@@ -29,19 +31,27 @@
             if (!childrenLink(content)) {
                 return;
             }
-            var header = content.querySelector('.cte_type');
-            if (header) {
-                header.style.cursor = 'pointer';
-            }
+            content.querySelectorAll('.cte_type, .cte_preview').forEach(function (bereich) {
+                bereich.style.cursor = 'pointer';
+            });
         });
     }
 
-    document.addEventListener('click', function (event) {
-        if (event.target.closest('a, button, input, label')) {
-            return;
+function istKlickziel(event) {
+        // Links, Knöpfe, Formularfelder und aufklappbare Teile in der Vorschau behalten ihre eigene Funktion
+        if (event.target.closest('a, button, input, label, select, textarea, summary, video, audio')) {
+            return null;
         }
+        // wer in der Vorschau Text markiert, will nichts öffnen
+        var auswahl = window.getSelection ? String(window.getSelection()) : '';
+        if (auswahl.trim() !== '') {
+            return null;
+        }
+        return event.target.closest('.cte_type, .cte_preview');
+    }
 
-        var header = event.target.closest('.cte_type');
+    document.addEventListener('click', function (event) {
+        var header = istKlickziel(event);
 
         if (!header) {
             return;

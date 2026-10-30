@@ -46,11 +46,11 @@ Diese Optionen wirken **nur für den jeweiligen Backend-Benutzer**.
 | --- | --- |
 | Erstes Element automatisch einfügen | Legt man in einer noch **leeren** sortierbaren Liste ein neues Element an (z. B. das erste Inhaltselement eines Artikels), überspringt diese Option die ansonsten überflüssige Positionsauswahl und fügt automatisch ein. Sind bereits Elemente vorhanden, bleibt die Positionsauswahl unangetastet. |
 | Klick auf Artikel-Zeile öffnet die Inhaltselemente | Ein Klick auf die Zeile eines Artikels öffnet direkt dessen Inhaltselemente – wie der Button „Inhaltselemente bearbeiten". |
-| Klick auf Elementgruppen-Kopf öffnet die Kindelemente | Ein Klick auf die Kopfzeile einer Elementgruppe öffnet direkt deren Kindelemente – wie der Button „Kindelemente". |
+| Klick auf Elementgruppe öffnet die Kindelemente | Ein Klick auf die Kopfzeile oder die Vorschau einer Elementgruppe öffnet direkt deren Kindelemente – wie der Button „Kindelemente". |
 | Elementgruppen: Bearbeiten-Stift ins „…“-Menü | Bei Elementgruppen bleibt nur der Button „Kindelemente“ direkt sichtbar; der Stift zum Bearbeiten der Gruppe selbst wandert ins „…“-Menü. Meist will man in die Gruppe hinein, nicht ihre Einstellungen ändern. |
 | Hinweis bei Insert-Tags | Enthält ein Datensatz Insert-Tags (z. B. `{{link::12}}`), zeigt ein Hinweis oben im Bearbeiten-Fenster jeden Tag mit seinem aktuellen Wert und einem Link dorthin, wo er gepflegt wird (Seite, Artikel, Element, Modul, News, Event, FAQ). Eigene Tags beschreibt eine Erweiterung über das Ereignis `InsertTagHintEvent` (Wert und Link setzen). **Standardmäßig aktiv.** |
 | Artikel: Bearbeiten-Stift ins „…“-Menü | Bei Artikeln bleibt nur der Button „Inhaltselemente“ direkt sichtbar; der Stift für die Artikel-Einstellungen wandert ins „…“-Menü – wie bei den Elementgruppen. |
-| Klick auf Inhaltselement-Kopf öffnet das Element | Ein Klick auf die Titelzeile eines (normalen) Inhaltselements öffnet es zum Bearbeiten – wie der Stift-Button. |
+| Klick auf Inhaltselement öffnet das Element | Ein Klick auf die Titelzeile oder die Vorschau eines (normalen) Inhaltselements öffnet es zum Bearbeiten – wie der Stift-Button. |
 | Klick auf Seiten-Zeile öffnet die Seiteneinstellungen | Ein Klick auf die Zeile einer Seite öffnet ihre Einstellungen zum Bearbeiten – wie der Stift-Button. |
 
 > Die anklickbaren Zeilen bzw. Köpfe zeigen beim Überfahren einen Pointer-Cursor.
