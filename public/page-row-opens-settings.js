@@ -18,9 +18,19 @@
 
     var ROW = 'li[data-contao--operations-menu-record-table-value="tl_page"]';
 
+    function editLink(row) {
+        // The row's own edit link (not the "show differences" / versions variant).
+        return row.querySelector('a[href*="act=edit"]:not([href*="versions"])');
+    }
+
     function applyCursor() {
-        document.querySelectorAll(ROW + ' .tl_left').forEach(function (left) {
-            left.style.cursor = 'pointer';
+        // Only rows that can actually be opened: in the article view (do=article) the
+        // page rows have no edit link, so a pointer there would promise a link that isn't one.
+        document.querySelectorAll(ROW).forEach(function (row) {
+            var left = row.querySelector('.tl_left');
+            if (left && editLink(row)) {
+                left.style.cursor = 'pointer';
+            }
         });
     }
 
@@ -59,8 +69,7 @@
             return;
         }
 
-        // The row's own edit link (not the "show differences" / versions variant).
-        var link = row.querySelector('a[href*="act=edit"]:not([href*="versions"])');
+        var link = editLink(row);
 
         if (link) {
             event.preventDefault();
